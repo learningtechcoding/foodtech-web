@@ -1,0 +1,27 @@
+.main-heading{
+    font-size: 40px;
+    font-weight: 500;
+}
+.card-link{
+    color: rgb(254, 216, 68);
+}
+.card-content{
+font-size: 16px;
+font-weight: 500;
+color: #4B4B4B;
+margin-bottom: 2.5rem;
+
+}
+.card-heading{
+    font-size: 17px;
+    font-weight: 500;
+    color: #101010;
+    white-space: nowrap;
+}
+.Services-bg{
+    background-image: url(/img/photos/background-img.png);
+}
+.services-card{
+    border: 2px solid #FFD21B !important;
+    background-color: #F5F5F5;
+}
