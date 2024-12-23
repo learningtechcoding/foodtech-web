@@ -11,6 +11,14 @@
 
     --card-bg-color:rgba(245, 245, 245, 1);
 }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Common width used for large screens */
+    margin: 0 auto;   /* Center the container */
+    padding: 0 15px;  /* Add some padding for inner spacing */
+  }
+}
+ 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: var(--primary-color);
     position: relative;
@@ -31,6 +39,15 @@
 .nav-link{
     color: var(--white-color);
     font-size: 18px;
+}
+
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  outline: none;
+  border: none;
 }
 .fill-button button{
     background-color: var(--primary-color);
@@ -223,15 +240,299 @@ line-height: 30px;
     border: 2px solid var(--border-color);
     border-radius: 24px;
     transition: 0.3s;
-    background-color: ;
+
+    background-color: rgba(245, 245, 245, 1);
+   
 }
 .Pricing-card:hover{
     border: 2px solid var(--border-hover-color);
     border-radius: 24px;
+    background-color: transparent;
+}
+
+.scard-price h1{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  color: rgba(75, 75, 75, 1);
+}
+.scard-price p{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(75, 75, 75, 1)
+}
+.card-signup-btn a{
+  border: 1.5px solid rgba(75, 75, 75, 1);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.5px;
+  padding-block: 10px;
+}
+
+.Pricing-card:hover .card-signup-btn a{
+  border: 1.5px solid var(--border-hover-color);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  line-height: 17.5px;
+  padding-block: 10px;
+}
+
+.scard-price1 h4{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.scard-price1 p{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
 }
 /*################> Pricing Plan Section End   <################*/
 
 
+/*###########> Why Choose Us Start <###########  */
+.whychoosus-inner{
+  border: 1px solid rgba(255, 210, 27, 0.5);
+  border-radius: 9px;
+  position: relative;
+   padding: 20px;
+}
+
+.whychoosus-main{
+  padding: 15px;
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 20px;
+}
+
+.whychoosus-main h4{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(16, 16, 16, 1);
+}
+.whychoosus-main p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(75, 75, 75, 1);
+}
+/*###########> Why Choose Us End   <###########*/
+
+
+/*#############> Testimonial Start <###############*/
+.maintestimonial{
+  background-color: rgba(245, 245, 245, 1);
+}
+.innertestimonial{
+  background-color: rgba(250, 250, 250, 1);
+
+  border-radius: 20px;
+}
+
+.innertestimonial img{
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.profile-cintrenbt h4{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+.profile-cintrenbt p{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(60, 60, 67, 0.85);
+}
+.testimonial-stars  i{
+  color: rgba(255, 149, 0, 1);
+}
+.laststrs{
+  color: rgba(209, 209, 214, 1) !important;
+}
+.testimonial-p p{
+  color: rgba(75, 75, 75, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*#############> Testimonial End   <###############*/
+
+/*###########> Banner Section Start <#############*/
+.home-bann2{
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.bannettext p{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  
+
+}
+.bannettext button{
+  background-color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 12px;
+
+  padding: 10px 20px;
+  
+border: 2px solid transparent;
+
+}
+.bannettext button:hover{
+  border:2px solid  var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+/*###########> Banner Section End   <#############*/
+
+/*#############> Reports Page Start <############  */
+.tablereports{
+  border: 1px solid var(--primary-color);
+   border-radius: 10px;
+}
+.tablaeheading{
+  background-color: var(--primary-color);
+}
+
+.table-contentse td{
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 20px;  
+ color: rgba(75, 75, 75, 1); 
+}
+.table-contentse td button{
+ border-radius: 10px;
+ border: 2px solid var(--primary-color);
+ color: var(--primary-color);
+ font-weight: 600;
+ padding: 5px 30px;
+ font-size: 14px;
+ background-color: transparent;
+
+}
+.table-contentse td button:hover{
+ 
+ border: 2px solid  transparent;
+ color:rgba(75, 75, 75, 1);
+ font-weight: 600;
+ padding: 5px 30px;
+ font-size: 14px;
+ background-color: var(--primary-color);
+
+}
+
+.table tbody, .table td, .table tfoot, .table th, .table thead, .table tr{
+  border-color: var(--primary-color);
+}
+.custompagination1 a{
+  border-radius: 10px !important;
+  padding: 7px 10px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  
+}
+.custompagination1 a:hover{
+  border-radius: 5px;
+  border-color:none;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.custompagination2 a{
+  border-radius: 10px !important;
+  padding: 7px 10px;
+  
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
+  border-color: var(--primary-color);
+
+}
+.custompagination2 a:hover{
+  border-radius: 10px !important;
+  
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  
+}
+
+
+.custompagination3 a{
+  border-radius: 10px !important;
+  padding: 7px 15px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  
+}
+.custompagination3 a:hover{
+  border-radius: 5px;
+  border-color:none;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.selectreoprt select{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  padding-block: 10px;
+}
+.selectreoprt select:focus{
+  box-shadow: none ;
+  border: none;
+  outline: none;
+  background-color: rgba(245, 245, 245, 1);
+}
+.selectreoprt  input{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  font-size: 14px;
+  font-weight: 600;
+ 
+  border: none;
+  padding-block: 10px;
+}
+.selectreoprt  input:focus{
+ box-shadow: none ;
+ border: none;
+ outline: none;
+ background-color: rgba(245, 245, 245, 1);
+}
+.selectreoprt  button{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  border: none;
+  padding-block: 10px;
+}
+.selectreoprt  button:hover{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1) !important;
+  border: none;
+  padding-block: 10px;
+ 
+}
+.selectreoprt  button{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  border: none;
+  padding-block: 10px;
+}
+/*#############> Reports Page End   <############*/
 @media(max-width:992px)
 {
     .plan-main h1{ 
