@@ -1,0 +1,53 @@
+.banner-FSSAI{
+     padding-top: 30px;
+     padding-bottom: 30px;
+}
+.accordion-button{
+    background-color: rgba(245, 245, 245, 1) !important;
+    border-radius: 10px;
+
+    color: rgba(75, 75, 75, 1) !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.accordion-item:first-of-type .accordion-button{
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.accordion-body{
+    background-color: rgba(245, 245, 245, 1) !important;
+
+    color: rgba(75, 75, 75, 1);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.accordion-button:focus{
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-item{
+    border: none !important;
+    margin-bottom: 20px;
+}
+
+.accordean-contant h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(16, 16, 16, 1);
+
+}
+
+@media(max-width:768px)
+{
+    .FAQS-content h1{
+        font-size: 24px;
+    }
+    .FAQS-content p{
+        font-size: 16px;
+        text-align: justify;
+    }
+}
