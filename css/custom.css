@@ -40,6 +40,15 @@
     color: var(--white-color);
     font-size: 18px;
 }
+
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
 .fill-button button{
     background-color: var(--primary-color);
     border: 2px solid transparent;
@@ -386,6 +395,144 @@ border: 2px solid transparent;
   background-color: transparent;
 }
 /*###########> Banner Section End   <#############*/
+
+/*#############> Reports Page Start <############  */
+.tablereports{
+  border: 1px solid var(--primary-color);
+   border-radius: 10px;
+}
+.tablaeheading{
+  background-color: var(--primary-color);
+}
+
+.table-contentse td{
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 20px;  
+ color: rgba(75, 75, 75, 1); 
+}
+.table-contentse td button{
+ border-radius: 10px;
+ border: 2px solid var(--primary-color);
+ color: var(--primary-color);
+ font-weight: 600;
+ padding: 5px 30px;
+ font-size: 14px;
+ background-color: transparent;
+
+}
+.table-contentse td button:hover{
+ 
+ border: 2px solid  transparent;
+ color:rgba(75, 75, 75, 1);
+ font-weight: 600;
+ padding: 5px 30px;
+ font-size: 14px;
+ background-color: var(--primary-color);
+
+}
+
+.table tbody, .table td, .table tfoot, .table th, .table thead, .table tr{
+  border-color: var(--primary-color);
+}
+.custompagination1 a{
+  border-radius: 10px !important;
+  padding: 7px 10px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  
+}
+.custompagination1 a:hover{
+  border-radius: 5px;
+  border-color:none;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.custompagination2 a{
+  border-radius: 10px !important;
+  padding: 7px 10px;
+  
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
+  border-color: var(--primary-color);
+
+}
+.custompagination2 a:hover{
+  border-radius: 10px !important;
+  
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  
+}
+
+
+.custompagination3 a{
+  border-radius: 10px !important;
+  padding: 7px 15px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  
+}
+.custompagination3 a:hover{
+  border-radius: 5px;
+  border-color:none;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.selectreoprt select{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  padding-block: 10px;
+}
+.selectreoprt select:focus{
+  box-shadow: none ;
+  border: none;
+  outline: none;
+  background-color: rgba(245, 245, 245, 1);
+}
+.selectreoprt  input{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  font-size: 14px;
+  font-weight: 600;
+ 
+  border: none;
+  padding-block: 10px;
+}
+.selectreoprt  input:focus{
+ box-shadow: none ;
+ border: none;
+ outline: none;
+ background-color: rgba(245, 245, 245, 1);
+}
+.selectreoprt  button{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  border: none;
+  padding-block: 10px;
+}
+.selectreoprt  button:hover{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1) !important;
+  border: none;
+  padding-block: 10px;
+ 
+}
+.selectreoprt  button{
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(75, 75, 75, 1);
+  border: none;
+  padding-block: 10px;
+}
+/*#############> Reports Page End   <############*/
 @media(max-width:992px)
 {
     .plan-main h1{ 
