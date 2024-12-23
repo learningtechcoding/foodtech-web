@@ -17,7 +17,7 @@
 
 
     .mainhaeder {
-      background-color: #000;
+      background-color: #4b4b44;
       /* Header default background */
       transition: all 0.3s ease-in-out;
 
@@ -36,6 +36,64 @@
   <link href="./css/modern.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/custom.css">
   <!-- END SETTINGS -->
+
+
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/FSSAILicense.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <style>
+    .slick-prev,
+    .slick-next {
+      z-index: 10;
+      background: none;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: -16px;
+      top: 112px;
+    }
+
+    .slick-next {
+      right: -16px;
+      top: 112px;
+    }
+
+    .slick-prev {
+      width: 40px;
+      height: 40px;
+      fill: #000;
+    }
+
+    .slick-next {
+      width: 40px;
+      height: 40px;
+      fill: #000;
+    }
+
+    @media(max-width:768px) {
+      .slick-prev {
+        left: -7px;
+        top: 112px;
+      }
+
+      .slick-next {
+        right: -6px;
+        top: 112px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -57,13 +115,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link mx-2  active" aria-current="page" href="#">
+                <a class="nav-link mx-2  active" aria-current="page" href="./index.html">
                   <div class="dott"></div>
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 " href="./SubscriptionPage.html">
                   <div class="dott"></div>
                   Subscriptions
                 </a>
@@ -117,7 +175,8 @@
                   style="background: url('background.jpg') no-repeat center center/cover;">
                   <div class="subscribe-container">
                     <input type="email" placeholder="Enter your email" aria-label="Enter your email">
-                    <button type="button">  <span class="d-none d-md-block">Subscribe</span> <span class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
                   </div>
                 </div>
               </div>
@@ -137,7 +196,8 @@
                   style="background: url('background.jpg') no-repeat center center/cover;">
                   <div class="subscribe-container">
                     <input type="email" placeholder="Enter your email" aria-label="Enter your email">
-                    <button type="button">  <span class="d-none d-md-block">Subscribe</span> <span class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
                   </div>
                 </div>
               </div>
@@ -157,7 +217,8 @@
                   style="background: url('background.jpg') no-repeat center center/cover;">
                   <div class="subscribe-container w-100">
                     <input type="email" placeholder="Enter your email" aria-label="Enter your email">
-                    <button type="button">  <span class="d-none d-md-block">Subscribe</span> <span class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
                   </div>
                 </div>
               </div>
@@ -177,52 +238,901 @@
       </button>
     </div>
     <!-- Home Banner End  -->
+    <div class="container-fluid ">
+      <div class="  Services-bg">
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-2 col-8 col-sm-6 col-md-4  mb-2 featuredadd">
+              <p class=" py-1 text-center bg-white rounded-4 mb-0">Featured Services</p>
+            </div>
+          </div>
+          <h2 class="text-center main-heading mb-4">Effortless FSSAI Compliance for Food Businesses</h2>
+          <div class="slider ">
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/application-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class=" card-heading mb-0">FSSAI Licens Application</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content ">Get your new FSSAI license with ease through our each-step</p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/renew-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class="card-heading mb-0">License Renewal&Modification</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content ">Keep your food license up to date or modify with our free renewal
+                  </p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/assistance-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class="card-heading mb-0">FSSAI Notice Assistance</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content">Receive expert guidance to handle FSSAI notices.</p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/validation-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class="card-heading mb-0">Food Label Validation</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content">Ensure your food product labels meet all regulatory standards .</p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/application-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class=" card-heading mb-0">FSSAI Licens Application</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content ">Get your new FSSAI license with ease through our each-step</p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/renew-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class="card-heading mb-0">License Renewal&Modification</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content">Keep your food license up to date or modify with our free renewal
+                  </p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/assistance-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class="card-heading mb-0">FSSAI Notice Assistance</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content">Receive expert guidance to handle FSSAI notices.</p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class=" px-2">
+              <div class="card services-card rounded-4">
+                <img class="card-img-top" src="img/photos/validation-img.png" alt="Unsplash">
+                <div class="card-header px-2">
+                  <h3 class="card-heading mb-0">Food Label Validation</h3>
+                </div>
+                <div class="card-body px-2">
+                  <p class="card-text card-content">Ensure your food product labels meet all regulatory standards .</p>
+                  <a href="#" class="card-link">More Info <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+                </div>
+              </div>
+            </div>
 
 
-    <div class="container-fluid">
-    <!--###########> Pricing Plan start <#############  -->
 
-<div class="container">
 
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-7">
-     <div class="plan-main text-center">
-      <h1>Perfect Plan for Your Needs</h1>
-      <p>Choose a subscription that aligns with your business goals and start 
-        managing your food operations with ease today!</p>
-     </div>
-    </div>
-  </div>
-  <div class="row py-4">
-    <div class="col-md-4 mb-3 mb-md-0">
-      <div class="card Pricing-card">
-        <div class="card-body d-flex flex-column">
-          <div class="mb-4 d-flex justify-content-between prici-free">
-            
-            <h2 class="">Free</h2>
-            <p  class="p-2" >First Month Free</p>
+
+
+
+
+
           </div>
 
-
-          <div class="">
-            <p>Get started with your food business effortlessly using our Free Food License Plan.</p>
-          </div>
-          <h6>Includes:</h6>
-        
-          <div class="mt-auto">
-            <a href="#" class="btn btn-lg btn-outline-primary">Sign up</a>
-          </div>
         </div>
       </div>
     </div>
-   
-  </div>
-</div>
-    <!--###########> Pricing Plan End <#############  -->
+
+
+    <div class="container-fluid">
+
+
+
+
+      <!--###########> Pricing Plan start <#############  -->
+
+      <div class="container pt-5 pb-5 pt-lg-0">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-7">
+            <div class="plan-main text-center">
+              <h1>Perfect Plan for Your Needs</h1>
+              <p>Choose a subscription that aligns with your business goals and start
+                managing your food operations with ease today!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card Pricing-card h-100 pb-5">
+              <div class="card-body  ">
+                <div class="mb-4 d-flex justify-content-between prici-free">
+
+                  <h2 class="">Free</h2>
+                  <p class="p-2">First Month Free</p>
+                </div>
+
+
+                <div class="">
+                  <p>Get started with your food business effortlessly using our Free Food License Plan.</p>
+                </div>
+
+
+
+                <div class="d-flex scard-price">
+                  <h1>$0</h1>
+                  <p class="mb-0 pt-2">+govt fee</p>
+                </div>
+
+                <div class="mt-auto card-signup-btn py-4">
+                  <a href="#" class="btn btn-lg  w-100  ">Start For Free</a>
+                </div>
+
+                <div class="  scard-price1">
+                  <h4>Plan Includes:</h4>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">New FSSAI License Application</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Renewal</p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card Pricing-card h-100 pb-5">
+              <div class="card-body  ">
+                <div class="mb-4 d-flex justify-content-between prici-free">
+
+                  <h2 class="">Starter</h2>
+                  <p class="p-2">First Month 75% Off</p>
+                </div>
+
+
+                <div class="">
+                  <p>Our Starter Plan is designed for businesses that need more support and features to smoothly
+                    navigate.</p>
+                </div>
+
+
+
+                <div class="d-flex scard-price">
+                  <h1>$6.25</h1>
+                  <p class="mb-0 pt-2">+govt fee</p>
+                </div>
+
+                <div class="mt-auto card-signup-btn py-4">
+                  <a href="#" class="btn btn-lg  w-100  ">Start Today</a>
+                </div>
+
+                <div class="  scard-price1">
+                  <h4>Everything in Membership Plus:</h4>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">New FSSAI License Application</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Renewal</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Annual Return Filing</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food Labels Validation Services</p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card Pricing-card h-100 pb-5">
+              <div class="card-body  ">
+                <div class="mb-4 d-flex justify-content-between prici-free">
+
+                  <h2 class="">Premium</h2>
+                  <p class="p-2">First Month 50% Off</p>
+                </div>
+
+
+                <div class="">
+                  <p>Our Premium Plan offers a comprehensive solution to ensure your food license application is smooth,
+                    quick, and stress-free.</p>
+                </div>
+
+
+
+                <div class="d-flex scard-price">
+                  <h1>$10.99</h1>
+                  <p class="mb-0 pt-2">+govt fee</p>
+                </div>
+
+                <div class="mt-auto card-signup-btn py-4">
+                  <a href="#" class="btn btn-lg  w-100  ">Start Today</a>
+                </div>
+
+                <div class="  scard-price1">
+                  <h4>Everything in Starter Plus:</h4>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">New FSSAI License Application</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Renewal</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Annual Return Filing</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food Labels Validation Services</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Reply to FSSAI Notice from Food Experts</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Reply to FSSAI Notice from Food Experts</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Modification</p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--###########> Pricing Plan End <#############  -->
+
+      <!--##########> Why choose US Start <#############  -->
+      <div class="container pt-5 pb-5 pt-lg-0">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-9">
+            <div class="plan-main text-center">
+              <h1>Why Choose US</h1>
+              <p>FoodTech Mate is built with the needs of the food industry in mind, supporting compliance for
+                businesses of all sizes—from small vendors to large enterprises</p>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+
+          <div class="col-lg-5">
+            <img src="./img/FoodHome/whychooseus.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-lg-7">
+            <div class="whychoosus-main mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychoose.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>Streamlined FSSAI Compliance</h4>
+                  <p class="mb-0">Get your FSSAI registration, license renewals, and modifications done with ease.
+                    FoodTech Mate simplifies the entire process, saving you time and ensuring you're always up-to-date
+                    with compliance</p>
+                </div>
+              </div>
+            </div>
+            <div class="whychoosus-main  mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychooseus1.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>All-in-One Solution</h4>
+                  <p class="mb-0"> Access every service you need in one place. From initial registration to subscription
+                    management, payments, and ongoing support, our platform is built to handle every step</p>
+                </div>
+              </div>
+            </div>
+            <div class="whychoosus-main  mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychooseus2.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>Transparent and Flexible Plans</h4>
+                  <p class="mb-0"> We offer a range of subscription packages tailored to different business needs.
+                    Compare plans side-by-side to find the best fit for your business, with clear pricing and no hidden
+                    fees.</p>
+                </div>
+              </div>
+            </div>
+            <div class="whychoosus-main  mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychooseus3.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>Secure and Reliable</h4>
+                  <p class="mb-0"> Your data security is our priority. With encrypted payment options through Stripe and
+                    PayPal, FoodTech Mate ensures a safe and reliable transaction experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!--##########> Why choose US End   <#############-->
+
+
+
+
+
+
+      <!--#############> FAQS Sectopn start <############  -->
+      <div class="container pt-5 pb-5 pt-lg-0">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-9">
+            <div class="plan-main text-center">
+              <h1>Frequently Asked Questions</h1>
+              <p>FoodTech Mate is a web-based platform designed to help food businesses in India manage FSSAI
+                compliance, licensing, and regulatory needs</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--#################< Accordion Section Start <##############  -->
+        <div class="accordion py-4" id="accordion-example">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-1" aria-expanded="false">
+                How does the FSSAI registration process work on FoodTech Mate?
+              </button>
+            </h2>
+            <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+              <div class="accordion-body pt-0">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-2" aria-expanded="false">
+                Can I choose a specific subscription package based on my needs?
+              </button>
+            </h2>
+            <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+              <div class="accordion-body pt-0">
+                <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-3" aria-expanded="false">
+                Is my payment information secure on FoodTech Mate?
+              </button>
+            </h2>
+            <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+              <div class="accordion-body pt-0">
+                <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4" aria-expanded="false">
+                What payment options are available?
+              </button>
+            </h2>
+            <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+              <div class="accordion-body pt-0">
+                <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--#################< Accordion Section End   <##############-->
+
+      </div>
+
+      <!--#############> FAQS Sectopn End   <############-->
+
+
+
+
+
+      <!--##########> Why choose US Start <#############  -->
+      <div class="container pt-5 pb-5 pt-lg-0">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-9">
+            <div class="plan-main text-center">
+              <h1>Why Choose US</h1>
+              <p>FoodTech Mate is built with the needs of the food industry in mind, supporting compliance for
+                businesses of all sizes—from small vendors to large enterprises</p>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+
+
+          <div class="col-lg-7">
+            <div class="whychoosus-main mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychoose.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>Streamlined FSSAI Compliance</h4>
+                  <p class="mb-0">Get your FSSAI registration, license renewals, and modifications done with ease.
+                    FoodTech Mate simplifies the entire process, saving you time and ensuring you're always up-to-date
+                    with compliance</p>
+                </div>
+              </div>
+            </div>
+            <div class="whychoosus-main  mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychooseus1.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>All-in-One Solution</h4>
+                  <p class="mb-0"> Access every service you need in one place. From initial registration to subscription
+                    management, payments, and ongoing support, our platform is built to handle every step</p>
+                </div>
+              </div>
+            </div>
+            <div class="whychoosus-main  mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychooseus2.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>Transparent and Flexible Plans</h4>
+                  <p class="mb-0"> We offer a range of subscription packages tailored to different business needs.
+                    Compare plans side-by-side to find the best fit for your business, with clear pricing and no hidden
+                    fees.</p>
+                </div>
+              </div>
+            </div>
+            <div class="whychoosus-main  mb-3">
+              <div class="row">
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <div class="whychoosus-inner">
+                    <img src="./img/FoodHome/whychooseus3.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-10 text-center text-lg-start">
+                  <h4>Secure and Reliable</h4>
+                  <p class="mb-0"> Your data security is our priority. With encrypted payment options through Stripe and
+                    PayPal, FoodTech Mate ensures a safe and reliable transaction experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="./img/FoodHome/whychooseus1.png" class="img-fluid w-100" alt="">
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <!--##########> Why choose US End   <#############-->
+
+
+      <!--##########> Testomonial Section Start <#############  -->
+
+      <div class="maintestimonial pt-5">
+        <div class="container pt-5 pb-5 pt-lg-0">
+
+          <div class="slider1">
+            <div class=" px-2">
+              <div class="card innertestimonial p-3 mb-0">
+                <div class="d-md-flex justify-content-center justify-content-md-between">
+                  <div class="d-md-flex text-center text-md-start">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <img src="./img/FoodHome/testimonail1.png" class="" alt="">
+                    </div>
+
+                    <div class="profile-cintrenbt ms-3  mb-2 mb-md-0">
+                      <h4 class="mb-0">Sasha Perry</h4>
+                      <p class="mb-0">Lead designer</p>
+
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center justify-content-md--end  mb-3 mb-md-0 testimonial-stars">
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star-half-alt  laststrs"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-p text-center text-md-start py-3">
+                  <p>Nisi vivamus neque elementum, at pharetra. Cras gravida congue in tincidunt neque, ipsum egestas.
+                    Duis risus ipsum dis commodo. Enim euismod velit amet volutpat egestas urna in eget pellentesque.
+                    Cras gravida congue in tincidunt neque, ipsum egestas. Duis risus ipsum dis commodo. Enim euismod
+                    velit amet volutpat egestas urna in eget pell...</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class=" px-2">
+              <div class="card innertestimonial p-3 mb-0">
+                <div class="d-md-flex justify-content-center justify-content-md-between">
+                  <div class="d-md-flex text-center text-md-start">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <img src="./img/FoodHome/testimonail1.png" class="" alt="">
+                    </div>
+
+                    <div class="profile-cintrenbt ms-3  mb-2 mb-md-0">
+                      <h4 class="mb-0">Sasha Perry</h4>
+                      <p class="mb-0">Lead designer</p>
+
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center justify-content-md--end  mb-3 mb-md-0 testimonial-stars">
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star-half-alt  laststrs"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-p text-center text-md-start py-3">
+                  <p>Nisi vivamus neque elementum, at pharetra. Cras gravida congue in tincidunt neque, ipsum egestas.
+                    Duis risus ipsum dis commodo. Enim euismod velit amet volutpat egestas urna in eget pellentesque.
+                    Cras gravida congue in tincidunt neque, ipsum egestas. Duis risus ipsum dis commodo. Enim euismod
+                    velit amet volutpat egestas urna in eget pell...</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class=" px-2">
+              <div class="card innertestimonial p-3 mb-0">
+                <div class="d-md-flex justify-content-center justify-content-md-between">
+                  <div class="d-md-flex text-center text-md-start">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <img src="./img/FoodHome/testimonail1.png" class="" alt="">
+                    </div>
+
+                    <div class="profile-cintrenbt ms-3  mb-2 mb-md-0">
+                      <h4 class="mb-0">Sasha Perry</h4>
+                      <p class="mb-0">Lead designer</p>
+
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center justify-content-md--end  mb-3 mb-md-0 testimonial-stars">
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star-half-alt  laststrs"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-p text-center text-md-start py-3">
+                  <p>Nisi vivamus neque elementum, at pharetra. Cras gravida congue in tincidunt neque, ipsum egestas.
+                    Duis risus ipsum dis commodo. Enim euismod velit amet volutpat egestas urna in eget pellentesque.
+                    Cras gravida congue in tincidunt neque, ipsum egestas. Duis risus ipsum dis commodo. Enim euismod
+                    velit amet volutpat egestas urna in eget pell...</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class=" px-2">
+              <div class="card innertestimonial p-3 mb-0">
+                <div class="d-md-flex justify-content-center justify-content-md-between">
+                  <div class="d-md-flex text-center text-md-start">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <img src="./img/FoodHome/testimonail1.png" class="" alt="">
+                    </div>
+
+                    <div class="profile-cintrenbt ms-3  mb-2 mb-md-0">
+                      <h4 class="mb-0">Sasha Perry</h4>
+                      <p class="mb-0">Lead designer</p>
+
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center justify-content-md--end  mb-3 mb-md-0 testimonial-stars">
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star-half-alt  laststrs"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-p text-center text-md-start py-3">
+                  <p>Nisi vivamus neque elementum, at pharetra. Cras gravida congue in tincidunt neque, ipsum egestas.
+                    Duis risus ipsum dis commodo. Enim euismod velit amet volutpat egestas urna in eget pellentesque.
+                    Cras gravida congue in tincidunt neque, ipsum egestas. Duis risus ipsum dis commodo. Enim euismod
+                    velit amet volutpat egestas urna in eget pell...</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class=" px-2">
+              <div class="card innertestimonial p-3 mb-0">
+                <div class="d-md-flex justify-content-center justify-content-md-between">
+                  <div class="d-md-flex text-center text-md-start">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <img src="./img/FoodHome/testimonail1.png" class="" alt="">
+                    </div>
+
+                    <div class="profile-cintrenbt ms-3  mb-2 mb-md-0">
+                      <h4 class="mb-0">Sasha Perry</h4>
+                      <p class="mb-0">Lead designer</p>
+
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center justify-content-md--end  mb-3 mb-md-0 testimonial-stars">
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star "></i>
+                    <i class="align-middle me-2 fas fa-fw fa-star-half-alt  laststrs"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-p text-center text-md-start py-3">
+                  <p>Nisi vivamus neque elementum, at pharetra. Cras gravida congue in tincidunt neque, ipsum egestas.
+                    Duis risus ipsum dis commodo. Enim euismod velit amet volutpat egestas urna in eget pellentesque.
+                    Cras gravida congue in tincidunt neque, ipsum egestas. Duis risus ipsum dis commodo. Enim euismod
+                    velit amet volutpat egestas urna in eget pell...</p>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <!--##########> Testomonial Section End   <#############-->
+
+
+
+
+      <!--##########> Banner Sectin Start <############  -->
+
+      <div class="home-bann2 my-3">
+        <div class="container  ">
+
+          <div class="row">
+            <div class="col-md-7 d-flex flex-column justify-content-center">
+              <div class="plan-main text-center text-md-start  bannettext">
+                <h1 class="mb-0 pb-0">Starting a business and confused where to begin?</h1>
+                 
+
+                <p class="py-3">We take care of Accounting, Business, Compliance, and Handle end-to-end soloutions</p>
+              
+              <button>Get Started</button>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <img src="./img/FoodHome/imgh.png" class="w-100 img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--##########> Banner Sectin End   <############-->
+
+
+
+
+
+
     </div>
- 
+
   </main>
   <script src="js/app.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
   <script>
     // JavaScript to make header sticky on scroll
@@ -234,6 +1144,85 @@
       } else {
         header.classList.remove('sticky');
       }
+    });
+  </script>
+
+
+
+  <!-- Custom Script -->
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        prevArrow: '<img src="/img/photos/slider-left-icon.svg" alt="" class ="slick-prev rounded-circle">',
+        nextArrow: '<img src="/img/photos/slider-right-icon.svg" alt="" class ="slick-next rounded-circle ">',
+        responsive: [
+          {
+            breakpoint: 1242,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.slider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false, // Disable arrows
+        responsive: [
+          {
+            breakpoint: 1242,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
     });
   </script>
 

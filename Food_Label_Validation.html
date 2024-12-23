@@ -13,93 +13,88 @@
     />
     <meta name="author" content="Bootlab" />
 
- 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
-  <meta name="author" content="Bootlab">
-  <link rel="stylesheet" href="css/FSSAIL.css">
+    <title>Food Tech Website</title>
 
-  <title>Food Tech Website</title>
+    <style>
+      body {
+        opacity: 0;
+      }
 
-  <style>
-    body {
-      opacity: 0;
-    }
+      .mainhaeder {
+        background-color: #000;
+        /* Header default background */
+        transition: all 0.3s ease-in-out;
+      }
 
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-bottom: 20px;
+      }
+    </style>
+    <link href="./css/modern.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/FSSAILicense.css" />
+    <!-- END SETTINGS -->
+  </head>
 
-    .mainhaeder {
-      background-color: #000;
-      /* Header default background */
-      transition: all 0.3s ease-in-out;
+  <body>
+    <!--################> Header start <############  -->
 
-
-    }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding-bottom: 20px;
-    }
-  </style>
-  <link href="./css/modern.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/custom.css">
-  <link rel="stylesheet" href="./css/FSSAILicense.css">
-  <!-- END SETTINGS -->
-</head>
-
-<body>
-  <!--################> Header start <############  -->
-
-  <div class="mainhaeder" id="mainHeader">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-transparent" style="z-index: 5;">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white pt-3" href="#">LOGO</a>
-          <button class="navbar-toggler navbar-toggler-cla " type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle 
-        navigation">
-
-            <i class="align-middle me-2 fas fa-fw fa-align-justify text-white"></i>
-            <!-- <span class="navbar-toggler-icon"></span> -->
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link mx-2  active" aria-current="page" href="#">
-                  <div class="dott"></div>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
-                  <div class="dott"></div>
-                  Subscriptions
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
-                  <div class="dott"></div>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
-                  <div class="dott"></div>
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-            <form class="d-flex pt-2  fill-button">
-              <button type="button" class="btn   btn-lg">Login In</button>
-            </form>
- 
+    <div class="mainhaeder" id="mainHeader">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent" style="z-index: 5">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white pt-3" href="#">LOGO</a>
+            <button
+              class="navbar-toggler navbar-toggler-cla"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle 
+        navigation"
+            >
+              <i
+                class="align-middle me-2 fas fa-fw fa-align-justify text-white"
+              ></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 active" aria-current="page" href="#">
+                    <div class="dott"></div>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#">
+                    <div class="dott"></div>
+                    Subscriptions
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#">
+                    <div class="dott"></div>
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#">
+                    <div class="dott"></div>
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              <form class="d-flex pt-2 fill-button">
+                <button type="button" class="btn btn-lg">Login In</button>
+              </form>
+            </div>
           </div>
         </nav>
       </div>
@@ -284,25 +279,21 @@
           <div class="row d-flex justify-content-center">
             <div class="col-lg-10 pt-5 pt-lg-0">
               <div class="plan-main FAQS-content text-center">
-                <h1>FSSAI License Application</h1>
+                <h1>Food Label Validation</h1>
                 <p>
-                  Food safety is a crucial aspect of any food business, and in
+                  Labeling is a critical component of food packaging, serving as
+                  the primary communication tool between manufacturers and
+                  consumers. It ensures transparency, provides essential product
+                  information, and helps consumers make informed choices. In
                   India, the Food Safety and Standards Authority of India
-                  (FSSAI) ensures that food products meet the necessary safety
-                  and quality standards. Whether you're a small food vendor or a
-                  large-scale manufacturer, obtaining an FSSAI registration or
-                  license is essential for legal compliance and building
-                  consumer trust.
+                  (FSSAI) governs labeling regulations to protect consumer
+                  interests and maintain food safety standards
                 </p>
               </div>
             </div>
           </div>
           <div class="banner-FSSAI">
-            <img
-              src="./img/FoodHome/FSSAIApplicationbanner.png"
-              class="w-100"
-              alt=""
-            />
+            <img src="./img/FoodHome/pic_validation.png" class="w-100" alt="" />
           </div>
           <!--#################< Accordion Section Start <##############  -->
           <div class="accordion py-4" id="accordion-example">
@@ -315,7 +306,7 @@
                   data-bs-target="#collapse-1"
                   aria-expanded="true"
                 >
-                  What is FSSAI Service?
+                  FSSAI Labeling Requirements: Key Elements
                 </button>
               </h2>
               <div
@@ -324,11 +315,9 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-2">
-                  FSSAI registration is a mandatory requirement for all
-                  food-related businesses in India. It signifies that a business
-                  complies with the regulations under the Food Safety and
-                  Standards Act, 2006. This registration is essential for food
-                  manufacturers, processors, packers, distributors, and sellers.
+                  Food product labels must include specific details as mandated
+                  by FSSAI to ensure compliance with the Food Safety and
+                  Standards (Packaging and Labeling) Regulations
                 </div>
               </div>
             </div>
@@ -341,7 +330,7 @@
                   data-bs-target="#collapse-2"
                   aria-expanded="false"
                 >
-                  Types of FSSAI Service
+                  Mandatory Information on Food Labels
                 </button>
               </h2>
               <div
@@ -350,39 +339,83 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body accordean-contant pt-2">
-                  FSSAI registration is categorized based on the scale of
-                  operations and turnover of the business:
-                  <h4 class="py-2">Basic Registration</h4>
+                  FSSAI may issue legal notices to food businesses for various
+                  reasons, often due to non-compliance with food safety
+                  regulations. Common triggers include
+                  <h4 class="py-2">Name of the Food</h4>
                   <ul>
                     <li>
-                      For small-scale businesses with an annual turnover of up
-                      to ₹12 lakh
-                    </li>
-                    <li>
-                      Ideal for petty food manufacturers, small retailers, and
-                      temporary food stalls.
+                      Clearly mention the product name, reflecting its true
+                      nature
                     </li>
                   </ul>
-                  <h4 class="py-2">State License</h4>
+                  <h4 class="py-2">Ingredients List</h4>
                   <ul>
                     <li>
-                      For businesses with an annual turnover of ₹12 lakh to ₹20
-                      crore
-                    </li>
-                    <li>
-                      Suitable for medium-sized manufacturers, storage units,
-                      and transporters
+                      List all ingredients used in descending order of their
+                      composition by weight or volume
                     </li>
                   </ul>
-                  <h4 class="py-2">Central License</h4>
+                  <h4 class="py-2">Nutritional Information</h4>
                   <ul>
                     <li>
-                      For businesses with an annual turnover of over ₹20 crore
-                      or those involved in exporting food products
+                      Provide the energy value (in kcal), protein, fat,
+                      carbohydrate content (including sugar), and other
+                      nutrients.
                     </li>
+                  </ul>
+                  <h4 class="py-2">Allergen Information</h4>
+                  <ul>
                     <li>
-                      Required for large manufacturers, importers, and chains
-                      operating across multiple states
+                      Highlight any allergens (e.g., nuts, gluten, soy) as per
+                      the prescribed format
+                    </li>
+                  </ul>
+                  <h4 class="py-2">Net Quantity</h4>
+                  <ul>
+                    <li>
+                      Indicate the net weight, volume, or number of servings
+                    </li>
+                  </ul>
+                  <h4 class="py-2">Manufacturer and Packer Details</h4>
+                  <ul>
+                    <li>
+                      Include the name and address of the manufacturer, packer,
+                      or importer.
+                    </li>
+                  </ul>
+                  <h4 class="py-2">Batch or Lot Number</h4>
+                  <ul>
+                    <li>Mention the batch or lot number for traceability</li>
+                  </ul>
+                  <h4 class="py-2">Date of Manufacture and Best Befores</h4>
+                  <ul>
+                    <li>
+                      Clearly state the manufacturing date and "Best Before" or
+                      "Use By" date
+                    </li>
+                  </ul>
+                  <h4 class="py-2">FSSAI Logo and License Number</h4>
+                  <ul>
+                    <li>
+                      Display the FSSAI logo and the 14-digit license number
+                      prominently
+                    </li>
+                  </ul>
+                  <h4 class="py-2">Vegetarian or Non-Vegetarian Symbol</h4>
+                  <ul>
+                    <li>
+                      Use a green dot for vegetarian products and a brown dot
+                      for non-vegetarian products.
+                    </li>
+                  </ul>
+                  <h4 class="py-2">FSSAI Guidelines for Claims Validation</h4>
+                  <ul>
+                    <li>
+                      Food product claims, whether related to health, nutrition,
+                      or the environment, must be truthful and substantiated.
+                      Misleading claims are subject to penalties under FSSAI
+                      regulations
                     </li>
                   </ul>
                 </div>
@@ -397,7 +430,7 @@
                   data-bs-target="#collapse-3"
                   aria-expanded="false"
                 >
-                  Key Documents Required for FSSAI Registration
+                  Types of Claims
                 </button>
               </h2>
               <div
@@ -406,53 +439,41 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  <h4>
-                    Depending on the type of registration, businesses may need
-                    the following documents:
-                  </h4>
-                  <h4 class="py-2">For Basic Registration</h4>
-                  <ul>
-                    <li>Passport-sized photo of the applicant</li>
-                    <li>Identity proof (e.g., Aadhar Card, PAN Card).</li>
-                    <li>Business details (e.g., address proof).</li>
-                  </ul>
-
-                  <h4 class="py-2">For State and Central Licenses</h4>
+                  <h4>Nutritional Claims</h4>
                   <ul>
                     <li>
-                      Proof of business incorporation (e.g., GST registration).
+                      Statements regarding nutrient content, such as "high in
+                      protein" or "low in fat," must meet specified thresholds.
                     </li>
-                    <li>List of food products handled.</li>
+                  </ul>
 
+                  <h4>Health Claims</h4>
+                  <ul>
+                    <li>
+                      Claims suggesting health benefits, such as "supports
+                      immunity" or "lowers cholesterol," must be backed by
+                      scientific evidence
+                    </li>
+                  </ul>
 
-      </div>
-    </div>
-
-  </div>
-    
-
-
-                    <li>Layout of the processing unit.</li>
-                    <li>Details of equipment and machinery used.</li>
-                    <li>Water quality test reports.</li>
-                    <li>Import/export documents (if applicable).</li>
+                  <h4>Environmental Claims</h4>
+                  <ul>
+                    <li>
+                      Labels like "eco-friendly" or "biodegradable" must be
+                      validated by credible certifications
+                    </li>
+                  </ul>
+                  <h4>Processing Claims</h4>
+                  <ul>
+                    <li>
+                      Terms like "cold-pressed," "handmade," or "organic"
+                      require adherence to specific standards and certifications
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
 
- 
-  </div>
-    
-
- 
-
-
-
-  <div class="row FSSAI-banner">
-    <div class=" container-fluid ">
-        <h2 class="Fassi-heading">FSSAI License Report</h2>
- 
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-4">
                 <button
@@ -462,7 +483,7 @@
                   data-bs-target="#collapse-4"
                   aria-expanded="false"
                 >
-                  Steps to Obtain FSSAI Registration
+                  Validation of Labeling and Claims
                 </button>
               </h2>
               <div
@@ -471,62 +492,44 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  <h4>
-                    Steps to Obtain FSSAI RegistrationDetermine the Type of
-                    Registration
-                  </h4>
+                  Validation ensures that labels and claims comply with FSSAI
+                  regulations and do not mislead consumers. This process
+                  involves
+                  <h4>Document Verification</h4>
+                  <ul>
+                    <li>Ingredient certificates.</li>
+                    <li>Laboratory analysis reports.</li>
+                    <li>Manufacturing process details</li>
+                  </ul>
+
+                  <h4>Nutritional Analysis</h4>
                   <ul>
                     <li>
-                      Assess your business's size and turnover to identify
-                      whether you need Basic, State, or Central registration
+                      Testing products in accredited laboratories to verify
+                      nutrient values
                     </li>
                   </ul>
 
-                  <h4>Prepare Required Documents</h4>
+                  <h4>Scientific Evidence for Claims</h4>
                   <ul>
                     <li>
-                      Gather all necessary documents and ensure they are
-                      complete and up to date
+                      Providing research papers, clinical studies, or
+                      authoritative references for health and nutrition claims
                     </li>
                   </ul>
-
-                  <h4>Apply Online</h4>
+                  <h4>Compliance with Labeling Laws</h4>
                   <ul>
                     <li>
-                      Visit the official FSSAI website or use a reliable
-                      third-party service to fill out the application form
-                    </li>
-                  </ul>
-
-                  <h4>Submit Fees</h4>
-                  <ul>
-                    <li>
-                      Pay the applicable fees based on the type of registration
-                    </li>
-                  </ul>
-
-                  <h4>Inspection and Approval</h4>
-                  <ul>
-                    <li>
-                      For State and Central licenses, an inspection of the
-                      premises may be conducted before approval
-                    </li>
-                  </ul>
-
-                  <h4>Receive Registration Certificate</h4>
-                  <ul>
-                    <li>
-                      Once approved, the registration/license certificate will
-                      be issued, valid for 1–5 years.
+                      Cross-checking label content against FSSAI guidelines for
+                      accuracy and completeness
                     </li>
                   </ul>
                 </div>
               </div>
- 
 
               <!--5th Accordian -->
             </div>
-            <!--Fith Accordian-->
+
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-5">
                 <button
@@ -536,7 +539,7 @@
                   data-bs-target="#collapse-5"
                   aria-expanded="false"
                 >
-                  Benefits of FSSAI Registration
+                  Common Non-Compliance Issues in Labeling
                 </button>
               </h2>
               <div
@@ -545,41 +548,41 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  <h4>Legal Compliance</h4>
+                  <h4>Incomplete or Misleading Labels</h4>
                   <ul>
                     <li>
-                      Avoid hefty fines and penalties by adhering to food safety
-                      regulations.
+                      Omitting mandatory information or making unsubstantiated
+                      claims
                     </li>
                   </ul>
 
-                  <h4>Enhanced Consumer Trust</h4>
+                  <h4>Non-Adherence to Font Size and Placement</h4>
                   <ul>
                     <li>
-                      Displaying the FSSAI logo builds confidence among
-                      consumers about the safety and quality of your products
+                      FSSAI mandates specific font sizes and placement for key
+                      information
                     </li>
                   </ul>
 
-                  <h4>Market Access</h4>
+                  <h4>Failure to Highlight Allergens</h4>
                   <ul>
-                    <li>
-                      FSSAI registration is mandatory for exporting food
-                      products and accessing larger markets
-                    </li>
+                    <li>Not emphasizing allergens as required by law</li>
                   </ul>
 
-                  <h4>Business Growth</h4>
+                  <h4>Improper Use of Terms</h4>
                   <ul>
                     <li>
-                      Registration opens up opportunities for partnerships,
-                      collaborations, and expansion
+                      Misusing terms like "natural," "fresh," or "organic"
+                      without certificationMisusing terms like "natural,"
+                      "fresh," or "organic" without certification
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <!--6th Accordian -->
             </div>
-            <!--6th Accordian -->
+
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-6">
                 <button
@@ -589,7 +592,7 @@
                   data-bs-target="#collapse-6"
                   aria-expanded="false"
                 >
-                  Penalties for Non-Compliance
+                  Best Practices for Labeling Compliance
                 </button>
               </h2>
               <div
@@ -598,54 +601,135 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  <h4>
-                    Operating a food business without FSSAI registration can
-                    lead to severe penalties, including:
-                  </h4>
-
+                  <h4>Understand FSSAI Guidelines</h4>
                   <ul>
-                    <li>Fines ranging from ₹2 lakh to ₹10 lakh.</li>
-                    <li>Suspension or cancellation of business operations.</li>
                     <li>
-                      Legal action under the Food Safety and Standards Act.
+                      Familiarize yourself with the latest packaging and
+                      labeling regulations
                     </li>
                   </ul>
 
-                  <h4>Renewing Your FSSAI Registration</h4>
+                  <h4>Conduct Pre-Market Validation</h4>
+                  <ul>
+                    <li>Validate labels and claims before product launch</li>
+                  </ul>
+
+                  <h4>Engage Accredited Labs</h4>
                   <ul>
                     <li>
-                      FSSAI registration must be renewed before its expiry.
-                      Failing to renew on time may result in penalties and
-                      disruptions to your business. Ensure timely renewal by
-                      monitoring the validity period on your certificate.
+                      Use FSSAI-approved labs for nutritional and safety
+                      testing.
+                    </li>
+                  </ul>
+
+                  <h4>Update Labels Regularly</h4>
+                  <ul>
+                    <li>
+                      Revise labels to reflect any changes in formulation,
+                      manufacturing processes, or regulations.
+                    </li>
+                  </ul>
+                  <h4>Leverage Technology</h4>
+                  <ul>
+                    <li>
+                      Use label-making software to ensure compliance with design
+                      and layout requirements.
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <!--5th Accordian -->
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-7">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-7"
+                  aria-expanded="false"
+                >
+                  Role of Labeling in Marketing Validation
+                </button>
+              </h2>
+              <div
+                id="collapse-7"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  A well-designed and compliant label not only meets regulatory
+                  requirements but also enhances brand credibility and consumer
+                  trust. It serves as a key marketing tool by
+                  <h4>Attracting Consumer Attention</h4>
+                  <ul>
+                    <li>
+                      Clear and visually appealing labels stand out on retail
+                      shelves
+                    </li>
+                  </ul>
+
+                  <h4>Communicating Value</h4>
+                  <ul>
+                    <li>
+                      Highlighting unique selling points, such as "sugar-free,"
+                      "gluten-free," or "fortified with vitamins
+                    </li>
+                  </ul>
+
+                  <h4>Building Trust</h4>
+                  <ul>
+                    <li>
+                      Compliance with FSSAI guidelines reassures consumers about
+                      product safety and quality.
+                    </li>
+                  </ul>
+                  <h4>Boosting Sales</h4>
+                  <ul>
+                    <li>
+                      Transparent and validated claims encourage repeat
+                      purchases and foster customer loyalty
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--5th Accordian -->
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-8"
+                  aria-expanded="false"
+                >
+                  Conclusion
+                </button>
+              </h2>
+              <div
+                id="collapse-8"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  Labeling and claim validation are essential for food
+                  businesses to ensure compliance with FSSAI standards and build
+                  consumer trust. By adhering to guidelines, validating claims,
+                  and using labels strategically, businesses can navigate the
+                  regulatory landscape while enhancing their market presence
+                </div>
+              </div>
+
+              <!--5th Accordian -->
             </div>
           </div>
 
           <!--#################< Accordion Section End   <##############-->
-
-          <!--#################< Renewing Your FSSAI Registration text  <##############-->
-          <div class="plan-main FAQS-content text-center">
-            <h1>Renewing Your FSSAI Registration</h1>
-          </div>
-
- 
-          <div class="text_Renewing_Your_FSSAI_Registration">
-            <div class="">
-              <p>
-                FSSAI registration must be renewed before its expiry. Failing to
-                renew on time may result in penalties and disruptions to your
-                business. Ensure timely renewal by monitoring the validity
-                period on your certificate.
-              </p>
-            </div>
-          </div>
- 
-
-          <!--#################< End Renewing Your FSSAI Registration text  <##############-->
 
           <!--#################< start Frequently Asked Questions  <##############-->
           <div class="mt-7">
@@ -666,7 +750,7 @@
           <!--#################<  end Frequently Asked Questions text  <##############-->
 
           <!--#################< Start Second Accordian data   <##############-->
-          <div class="accordion py-4" id="accordion-example">
+          <div class="accordion mt-3 py-4" id="accordion-example">
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-1">
                 <button
@@ -676,7 +760,7 @@
                   data-bs-target="#collapse-1"
                   aria-expanded="true"
                 >
-                  What is FSSAI registration?
+                  What is the importance of FSSAI labeling guidelines?
                 </button>
               </h2>
               <div
@@ -685,12 +769,10 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-2">
-                  FSSAI registration is mandatory for all food businesses in
-                  India to ensure food safety and compliance with government
-                  regulations
+                  FSSAI labeling guidelines ensure that consumers receive
+                  accurate and transparent information about food products
                 </div>
               </div>
- 
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-2">
@@ -701,7 +783,7 @@
                   data-bs-target="#collapse-2"
                   aria-expanded="false"
                 >
-                  Who needs FSSAI registration?
+                  What are the mandatory details on a food label?
                 </button>
               </h2>
               <div
@@ -710,9 +792,8 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body accordean-contant pt-2">
-                  Any food business operator (FBO), including manufacturers,
-                  traders, restaurants, and food delivery services, must obtain
-                  FSSAI registration
+                  Key details include product name, ingredients, nutritional
+                  information, manufacturer details, and FSSAI license number
                 </div>
               </div>
             </div>
@@ -725,7 +806,7 @@
                   data-bs-target="#collapse-3"
                   aria-expanded="false"
                 >
-                  What are the different types of FSSAI licenses?
+                  What are food claims, and why are they validated?
                 </button>
               </h2>
               <div
@@ -734,11 +815,10 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  There are three types of FSSAI licenses: Basic Registration,
-                  State License, and Central License, depending on the size and
-                  turnover of the business
+                  Food claims are statements about product benefits, such as
+                  "low sugar" or "high protein." They are validated to ensure
+                  they are accurate and not misleading
                 </div>
- 
               </div>
             </div>
 
@@ -751,7 +831,7 @@
                   data-bs-target="#collapse-4"
                   aria-expanded="false"
                 >
-                  How long does FSSAI registration take?
+                  What is the penalty for false claims?
                 </button>
               </h2>
               <div
@@ -760,8 +840,8 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  It typically takes 7–10 working days, but it may vary based on
-                  documentation and approvals.
+                  Misleading claims can result in fines, license suspension, or
+                  product recalls under FSSAI regulations
                 </div>
               </div>
 
@@ -777,7 +857,7 @@
                   data-bs-target="#collapse-5"
                   aria-expanded="false"
                 >
-                  How can I apply for FSSAI registration?
+                  How can businesses validate their claims?
                 </button>
               </h2>
               <div
@@ -786,8 +866,8 @@
                 data-bs-parent="#accordion-example"
               >
                 <div class="accordion-body pt-0">
-                  You can apply online through the FSSAI FoSCoS portal or via an
-                  FSSAI consultant
+                  By conducting scientific testing, using accredited labs, and
+                  ensuring compliance with FSSAI standards
                 </div>
               </div>
             </div>

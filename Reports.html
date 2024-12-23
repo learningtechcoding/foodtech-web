@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+  <meta name="author" content="Bootlab">
+
+  <title>Food Tech Website</title>
+
+  <style>
+    body {
+      opacity: 0;
+    }
+
+
+    .mainhaeder {
+      background-color: #000;
+      /* Header default background */
+      transition: all 0.3s ease-in-out;
+
+
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-bottom: 20px;
+    }
+  </style>
+  <link href="./css/modern.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/custom.css">
+  <!-- END SETTINGS -->
+
+
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/FSSAILicense.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <style>
+    .slick-prev,
+    .slick-next {
+      z-index: 10;
+      background: none;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: -16px;
+      top: 112px;
+    }
+
+    .slick-next {
+      right: -16px;
+      top: 112px;
+    }
+
+    .slick-prev {
+      width: 40px;
+      height: 40px;
+      fill: #000;
+    }
+
+    .slick-next {
+      width: 40px;
+      height: 40px;
+      fill: #000;
+    }
+
+    @media(max-width:768px) {
+      .slick-prev {
+        left: -7px;
+        top: 112px;
+      }
+
+      .slick-next {
+        right: -6px;
+        top: 112px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--################> Header start <############  -->
+
+  <div class="mainhaeder" id="mainHeader">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-transparent" style="z-index: 5;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white pt-3" href="#">LOGO</a>
+          <button class="navbar-toggler navbar-toggler-cla " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle 
+        navigation">
+
+            <i class="align-middle me-2 fas fa-fw fa-align-justify text-white"></i>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-2  " aria-current="page" href="./index.html">
+                  <div class="dott"></div>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" href="./SubscriptionPage.html">
+                  <div class="dott"></div>
+                  Subscriptions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="#">
+                  <div class="dott"></div>
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="#">
+                  <div class="dott"></div>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex pt-2  fill-button">
+              <button type="button" class="btn   btn-lg">Login In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+  <!--################> Header End   <############-->
+
+  <main>
+    <!-- Home Banner Start  -->
+    <div id="carouselExampleCaptions" class="carousel slide main-home-banner">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 banner-content">
+                <h1>SUBSCRIBE FOR 
+                    EXCLUSIVE UPDATES</h1>
+                <p>Join our community! Subscribe now for exclusive updates, offers, and insights delivered straight to your inbox.</p>
+
+
+                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
+                  style="background: url('background.jpg') no-repeat center center/cover;">
+                  <div class="subscribe-container">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 banner-content">
+                <h1>SUBSCRIBE FOR 
+                    EXCLUSIVE UPDATES</h1>
+                <p>Join our community! Subscribe now for exclusive updates, offers, and insights delivered straight to your inbox.</p>
+
+
+                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
+                  style="background: url('background.jpg') no-repeat center center/cover;">
+                  <div class="subscribe-container">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 banner-content">
+                <h1>SUBSCRIBE FOR 
+                    EXCLUSIVE UPDATES</h1>
+                <p>Join our community! Subscribe now for exclusive updates, offers, and insights delivered straight to your inbox.</p>
+
+
+                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
+                  style="background: url('background.jpg') no-repeat center center/cover;">
+                  <div class="subscribe-container w-100">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ 
+
+
+    <div class="container-fluid">
+
+
+
+
+      <!--###########> Pricing Plan start <#############  -->
+
+      <div class="container pt-5 pb-5 pt-lg-0">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-7">
+            <div class="plan-main text-center">
+              <h1>Our Reports</h1>
+              <p>Choose a subscription that aligns with your business goals and start 
+                managing your food operations with ease today!</p>
+            </div>
+
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5 mb-3">
+                <div class="selectreoprt">
+                    <select class="form-select form-select-lg" aria-label="Default select example">
+                        <option selected>Select Services</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+            </div>
+            <div class="col-md-5 selectreoprt">
+
+                
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button"><i class="align-middle me-2 fas fa-fw fa-search"></i></button>
+    </div>
+  </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="table-responsive tablereports">
+            <table class="table mb-0">
+                <thead>
+                    <tr class="tablaeheading">
+                        <th scope="col">ID</th>
+                        <th scope="col">Reports</th>
+                        <th scope="col">PDF</th>
+                        <th scope="col">Action</th>
+                      
+                    </tr>
+                </thead>
+              <tbody>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+                <tr class="table-contentse">
+                    <td><strong>01</strong></td>
+                    <td>ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at moles.......</td>
+                    <td>
+                        
+                        <a href="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2375 22.3512C15.2375 21.5307 14.6675 21.0405 13.6623 21.0405C13.2521 21.0405 12.9746 21.0805 12.8289 21.1193V23.7548C13.0016 23.7936 13.2132 23.8077 13.5036 23.8077C14.5757 23.8077 15.2375 23.2646 15.2375 22.3512ZM21.4628 21.0664C21.0126 21.0664 20.7211 21.1064 20.5483 21.1463V26.9851C20.7211 27.025 20.9985 27.025 21.2501 27.025C23.0769 27.038 24.2688 26.0317 24.2688 23.9005C24.2828 22.0468 23.1967 21.0664 21.4628 21.0664Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                <path d="M33.3894 17.637H32.6574V14.1055L32.6509 14.0386C32.6516 13.8966 32.6014 13.7591 32.5094 13.651L26.6329 6.9399L26.6286 6.93558C26.5538 6.85476 26.4588 6.79548 26.3533 6.76391L26.3209 6.75312C26.2761 6.74151 26.23 6.7357 26.1838 6.73584H11.7414C11.0817 6.73584 10.5462 7.27243 10.5462 7.93101V17.637H9.8142C8.87059 17.637 8.1062 18.4014 8.1062 19.345V28.2284C8.1062 29.1709 8.87167 29.9364 9.8142 29.9364H10.5462V36.018C10.5462 36.6766 11.0817 37.2132 11.7414 37.2132H31.4622C32.1208 37.2132 32.6574 36.6766 32.6574 36.018V29.9364H33.3894C34.333 29.9364 35.0974 29.1709 35.0974 28.2284V19.345C35.0974 18.4014 34.3319 17.637 33.3894 17.637ZM11.7414 7.93101H25.5857V14.0461C25.5857 14.3765 25.8534 14.6432 26.1838 14.6432H31.4633V17.637H11.7414V7.93101ZM26.4138 23.8342C26.4138 25.5422 25.7919 26.7212 24.9292 27.4489C23.99 28.2294 22.5605 28.6008 20.8126 28.6008C19.7664 28.6008 19.0257 28.5339 18.5215 28.4691V19.7035C19.2633 19.5847 20.2295 19.5189 21.2498 19.5189C22.9438 19.5189 24.0429 19.8233 24.9033 20.4722C25.8307 21.1599 26.4138 22.259 26.4138 23.8342ZM10.828 28.5091V19.7035C11.4499 19.5977 12.3244 19.5189 13.5552 19.5189C14.8 19.5189 15.6875 19.7575 16.2824 20.2336C16.8513 20.6838 17.2346 21.4255 17.2346 22.2989C17.2346 23.1735 16.9442 23.9141 16.4141 24.4172C15.7253 25.0661 14.7061 25.3576 13.5141 25.3576C13.2496 25.3576 13.011 25.3446 12.8264 25.3176V28.5091H10.828ZM31.4622 35.6941H11.7414V29.9364H31.4622V35.6941ZM33.1939 21.2398H29.7639V23.2793H32.9683V24.9214H29.7639V28.5091H27.7396V19.5847H33.1939V21.2398Z" fill="#FFD21B" fill-opacity="0.5"/>
+                                </svg>
+                                
+                        </a>
+                    </td>
+                    <td> 
+
+                        <button>View</button>
+                    </td>
+                    
+                </tr>
+              </tbody>
+            </table>
+
+            
+        </div>
+    
+
+
+        <div class="d-flex justify-content-center justify-content-md-end pt-3">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination custompagination">
+                  <li class="page-item p-2 custompagination1"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item p-2 custompagination3"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item p-2 custompagination3"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item p-2 custompagination3"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item p-2 custompagination2"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div>
+      </div>
+
+      <!--###########> Pricing Plan End <#############  -->
+ 
+
+
+
+
+ 
+
+
+
+
+     
+ 
+ 
+
+
+
+
+
+    </div>
+
+  </main>
+  <script src="js/app.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    // JavaScript to make header sticky on scroll
+    const header = document.getElementById('mainHeader');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { // Adjust threshold as needed
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+  </script>
+
+
+
+  <!-- Custom Script -->
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        prevArrow: '<img src="/img/photos/slider-left-icon.svg" alt="" class ="slick-prev rounded-circle">',
+        nextArrow: '<img src="/img/photos/slider-right-icon.svg" alt="" class ="slick-next rounded-circle ">',
+        responsive: [
+          {
+            breakpoint: 1242,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.slider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false, // Disable arrows
+        responsive: [
+          {
+            breakpoint: 1242,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
