@@ -1,0 +1,96 @@
+.FSSAI-banner {
+    background-color: #F5F5F5; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+  
+    border: 1px solid #FFD21B33 !important;
+}
+.Fassi-heading{
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.Fassi-pharagraph{
+    font-size: 16px;
+    color: #666666;
+}
+p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.butns{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+ .buy-butn{
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+
+
+ }
+ .smll{
+    font-size: 14px;
+    font-weight: 500;
+ }
+
+ .footer {
+    padding: 20px 0;
+}
+.footer-heading{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-link {
+    width: 50%; /* Adjust width as needed */
+}
+
+.footer-link a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer-social {
+    display: flex;
+}
+.footer-social a {
+    margin-right: 15px;
+    color: #333;
+}
+.footer-newsletter {
+    width: 40%; /* Adjust width as needed */
+}
+.footer-newsletter input[type="email"] {
+    padding: 6px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.footer-newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px 20px;
+    white-space: nowrap;
+}

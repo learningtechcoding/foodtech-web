@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+  <meta name="author" content="Bootlab">
+
+  <title>Food Tech Website</title>
+
+  <style>
+    body {
+      opacity: 0;
+    }
+
+
+    .mainhaeder {
+      background-color: #000;
+      /* Header default background */
+      transition: all 0.3s ease-in-out;
+
+
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-bottom: 20px;
+    }
+  </style>
+  <link href="./css/modern.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/custom.css">
+  <!-- END SETTINGS -->
+
+
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/FSSAILicense.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <style>
+    .slick-prev,
+    .slick-next {
+      z-index: 10;
+      background: none;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: -16px;
+      top: 112px;
+    }
+
+    .slick-next {
+      right: -16px;
+      top: 112px;
+    }
+
+    .slick-prev {
+      width: 40px;
+      height: 40px;
+      fill: #000;
+    }
+
+    .slick-next {
+      width: 40px;
+      height: 40px;
+      fill: #000;
+    }
+
+    @media(max-width:768px) {
+      .slick-prev {
+        left: -7px;
+        top: 112px;
+      }
+
+      .slick-next {
+        right: -6px;
+        top: 112px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--################> Header start <############  -->
+
+  <div class="mainhaeder" id="mainHeader">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-transparent" style="z-index: 5;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white pt-3" href="#">LOGO</a>
+          <button class="navbar-toggler navbar-toggler-cla " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle 
+        navigation">
+
+            <i class="align-middle me-2 fas fa-fw fa-align-justify text-white"></i>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-2  " aria-current="page" href="./index.html">
+                  <div class="dott"></div>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" href="./SubscriptionPage.html">
+                  <div class="dott"></div>
+                  Subscriptions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="#">
+                  <div class="dott"></div>
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="#">
+                  <div class="dott"></div>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex pt-2  fill-button">
+              <button type="button" class="btn   btn-lg">Login In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+  <!--################> Header End   <############-->
+
+  <main>
+    <!-- Home Banner Start  -->
+    <div id="carouselExampleCaptions" class="carousel slide main-home-banner">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 banner-content">
+                <h1>SUBSCRIBE FOR 
+                    EXCLUSIVE UPDATES</h1>
+                <p>Join our community! Subscribe now for exclusive updates, offers, and insights delivered straight to your inbox.</p>
+
+
+                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
+                  style="background: url('background.jpg') no-repeat center center/cover;">
+                  <div class="subscribe-container">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 banner-content">
+                <h1>SUBSCRIBE FOR 
+                    EXCLUSIVE UPDATES</h1>
+                <p>Join our community! Subscribe now for exclusive updates, offers, and insights delivered straight to your inbox.</p>
+
+
+                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
+                  style="background: url('background.jpg') no-repeat center center/cover;">
+                  <div class="subscribe-container">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 banner-content">
+                <h1>SUBSCRIBE FOR 
+                    EXCLUSIVE UPDATES</h1>
+                <p>Join our community! Subscribe now for exclusive updates, offers, and insights delivered straight to your inbox.</p>
+
+
+                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
+                  style="background: url('background.jpg') no-repeat center center/cover;">
+                  <div class="subscribe-container w-100">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+                    <button type="button"> <span class="d-none d-md-block">Subscribe</span> <span
+                        class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ 
+
+
+    <div class="container-fluid">
+
+
+
+
+      <!--###########> Pricing Plan start <#############  -->
+
+      <div class="container pt-5 pb-5 pt-lg-0">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-7">
+            <div class="plan-main text-center">
+              <h1>Perfect Plan for Your Needs</h1>
+              <p>Choose a subscription that aligns with your business goals and start
+                managing your food operations with ease today!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card Pricing-card h-100 pb-5">
+              <div class="card-body  ">
+                <div class="mb-4 d-flex justify-content-between prici-free">
+
+                  <h2 class="">Free</h2>
+                  <p class="p-2">First Month Free</p>
+                </div>
+
+
+                <div class="">
+                  <p>Get started with your food business effortlessly using our Free Food License Plan.</p>
+                </div>
+
+
+
+                <div class="d-flex scard-price">
+                  <h1>$0</h1>
+                  <p class="mb-0 pt-2">+govt fee</p>
+                </div>
+
+                <div class="mt-auto card-signup-btn py-4">
+                  <a href="#" class="btn btn-lg  w-100  ">Start For Free</a>
+                </div>
+
+                <div class="  scard-price1">
+                  <h4>Plan Includes:</h4>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">New FSSAI License Application</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Renewal</p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card Pricing-card h-100 pb-5">
+              <div class="card-body  ">
+                <div class="mb-4 d-flex justify-content-between prici-free">
+
+                  <h2 class="">Starter</h2>
+                  <p class="p-2">First Month 75% Off</p>
+                </div>
+
+
+                <div class="">
+                  <p>Our Starter Plan is designed for businesses that need more support and features to smoothly
+                    navigate.</p>
+                </div>
+
+
+
+                <div class="d-flex scard-price">
+                  <h1>$6.25</h1>
+                  <p class="mb-0 pt-2">+govt fee</p>
+                </div>
+
+                <div class="mt-auto card-signup-btn py-4">
+                  <a href="#" class="btn btn-lg  w-100  ">Start Today</a>
+                </div>
+
+                <div class="  scard-price1">
+                  <h4>Everything in Membership Plus:</h4>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">New FSSAI License Application</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Renewal</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Annual Return Filing</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food Labels Validation Services</p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card Pricing-card h-100 pb-5">
+              <div class="card-body  ">
+                <div class="mb-4 d-flex justify-content-between prici-free">
+
+                  <h2 class="">Premium</h2>
+                  <p class="p-2">First Month 50% Off</p>
+                </div>
+
+
+                <div class="">
+                  <p>Our Premium Plan offers a comprehensive solution to ensure your food license application is smooth,
+                    quick, and stress-free.</p>
+                </div>
+
+
+
+                <div class="d-flex scard-price">
+                  <h1>$10.99</h1>
+                  <p class="mb-0 pt-2">+govt fee</p>
+                </div>
+
+                <div class="mt-auto card-signup-btn py-4">
+                  <a href="#" class="btn btn-lg  w-100  ">Start Today</a>
+                </div>
+
+                <div class="  scard-price1">
+                  <h4>Everything in Starter Plus:</h4>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">New FSSAI License Application</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Renewal</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Annual Return Filing</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food Labels Validation Services</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Reply to FSSAI Notice from Food Experts</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Reply to FSSAI Notice from Food Experts</p>
+                  </div>
+                  <div class="d-flex">
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.8692 5.8456C15.9438 5.90225 16.0065 5.97305 16.0537 6.05396C16.101 6.13487 16.1318 6.2243 16.1444 6.31713C16.157 6.40996 16.1512 6.50436 16.1273 6.59494C16.1034 6.68552 16.0618 6.77049 16.005 6.845L8.40504 16.82C8.34339 16.9008 8.26517 16.9675 8.17563 17.0156C8.08609 17.0636 7.9873 17.092 7.8859 17.0987C7.78449 17.1055 7.68281 17.0905 7.58769 17.0547C7.49257 17.0189 7.4062 16.9632 7.33439 16.8913L3.05939 12.6163C2.93354 12.4812 2.86502 12.3025 2.86828 12.118C2.87153 11.9334 2.94631 11.7573 3.07685 11.6267C3.20739 11.4962 3.38351 11.4214 3.56809 11.4181C3.75268 11.4149 3.93133 11.4834 4.06639 11.6093L7.76569 15.3076L14.8717 5.98145C14.9861 5.83131 15.1553 5.73267 15.3423 5.7072C15.5294 5.68173 15.7188 5.73151 15.8692 5.8456Z"
+                        fill="#FFD21B" />
+                    </svg>
+                    <p class="mb-0 pt-1 ps-2">Food License Modification</p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--###########> Pricing Plan End <#############  -->
+ 
+
+
+
+
+ 
+
+
+
+
+     
+ 
+ 
+
+
+
+
+
+    </div>
+
+  </main>
+  <script src="js/app.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    // JavaScript to make header sticky on scroll
+    const header = document.getElementById('mainHeader');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { // Adjust threshold as needed
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+  </script>
+
+
+
+  <!-- Custom Script -->
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        prevArrow: '<img src="/img/photos/slider-left-icon.svg" alt="" class ="slick-prev rounded-circle">',
+        nextArrow: '<img src="/img/photos/slider-right-icon.svg" alt="" class ="slick-next rounded-circle ">',
+        responsive: [
+          {
+            breakpoint: 1242,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.slider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false, // Disable arrows
+        responsive: [
+          {
+            breakpoint: 1242,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
