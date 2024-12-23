@@ -10,6 +10,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+    box-shadow: none;
 }
 .accordion-item:first-of-type .accordion-button{
     border-top-left-radius: 10px !important;
@@ -23,6 +24,7 @@
     font-weight: 600;
 
 }
+
 .accordion-button:focus{
     border: none !important;
     box-shadow: none !important;
