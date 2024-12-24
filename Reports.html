@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./css/contactUs.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
   <meta name="author" content="Bootlab">
@@ -50,6 +51,23 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
   <style>
+    
+    .mainhaeder {
+      background-color: #4b4b44;
+      /* Header default background */
+      transition: all 0.3s ease-in-out;
+
+
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-bottom: 20px;
+    }
     .slick-prev,
     .slick-next {
       z-index: 10;
@@ -121,19 +139,19 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 active" href="./SubscriptionPage.html">
+                <a class="nav-link mx-2 " href="./SubscriptionPage.html">
                   <div class="dott"></div>
                   Subscriptions
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+              <li class="nav-item ">
+                <a class="nav-link mx-2 active" href="Reports.html">
                   <div class="dott"></div>
                   Reports
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 " href="ContactUs.html">
                   <div class="dott"></div>
                   Contact Us
                 </a>
@@ -468,6 +486,52 @@
                 </ul>
               </nav>
         </div>
+        <div class="row pt-4 ">
+          <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer-content row">
+                    <div class="col-md-2">
+                        <h5 class="footer-heading-smal mb-4">Support</h5>
+                           <div class="footer-link">
+                            <a href="#"><p class="links-space">Contact Us</p></a>
+                            <a href="#">Help & Center</a>
+                           </div>
+                    </div>
+                    <div class="col-md-2 pt-md-0 pt-3">
+                        <h5 class="footer-heading-smal mb-4">Company</h5>
+                        <div class="footer-link">
+                          <a href="#" > <p class="links-space">Terms of Service</p></a>
+                          <a href="#"><p class="links-space">Privacy Policy</p></a>
+                          <a href="#"><p class="links-space">About Us</p></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 social-links pt-md-0 pt-3">
+                        <h5 class="footer-heading-smal mb-4">Contact Us</h5>
+                        <a href="" class=""><i class="fas fa-phone me-2 mt-1"></i> +123 456 7890</a><br>
+                        <a href=""><i class="fas fa-envelope me-2 mt-3"></i> yourmail@example.com</a><br>
+                        <a href=""><i class="fas fa-map-marker-alt me-2 mt-3"></i> 123 Main St, Anytown</a>
+                        <div class="footer-social mt-4">
+                            <a href="#"><img src="./img/photos/linkdin.svg" alt=""></i></a>
+                            <a href="#"><img src="./img/photos/faceboob.svg" alt=""></i></a>
+                            <a href="#"><img src="./img/photos/twitter.svg" alt=""></i></a>
+                            <a href="#"><img src="./img/photos/insta.svg" alt=""></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-md-0 pt-3">
+                        <h5 class="footer-heading mb-4">Receive updates from our weekly
+                          newsletter.</h5>
+                        <p>Be the first to get notified about new foodtech features & updates.</p>
+                        <div class="footer-newsletter d-sm-flex pt-md-4 w-100">
+                            <input type="email" class="w-sm-100" placeholder="Enter your email">
+                            <div class="d-flex justify-content-center mt-3 ">
+                              <button>Notify Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         </div>
       </div>
 
       <!--###########> Pricing Plan End <#############  -->

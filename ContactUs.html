@@ -12,13 +12,14 @@
   <title>Food Tech Website</title>
 
   <style>
+    
     body {
       opacity: 0;
     }
 
 
     .mainhaeder {
-      background-color: #000;
+      background-color: #4b4b44;
       /* Header default background */
       transition: all 0.3s ease-in-out;
 
@@ -58,32 +59,32 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link mx-2  active" aria-current="page" href="#">
+                <a class="nav-link mx-2  "  href="#">
                   <div class="dott"></div>
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 " href="SubscriptionPage.html">
                   <div class="dott"></div>
                   Subscriptions
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 " href="Reports.html">
                   <div class="dott"></div>
                   Reports
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+              <li class="nav-item ">
+                <a class="nav-link mx-2 active"aria-current="page" href="ContactUs.html">
                   <div class="dott"></div>
                   Contact Us
                 </a>
               </li>
             </ul>
             <form class="d-flex pt-2  fill-button">
-              <button type="button" class="btn   btn-lg">Login In</button>
+              <button type="button" class="btn   btn-lg">Login In<s/button>
             </form>
           </div>
         </div>
@@ -189,21 +190,43 @@
 
 
 
-  <div class="row d-flex justify-content-center mb-5 pb-5">
+  <div class="row d-flex justify-content-center mb-lg-5 pb-lg-5 pt-3">
     
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
                     <p class="reliable-contect mb-4">Reliable contact details for seamless<br> communication and support.</p>
-                    <p class="call-no"><i class="bi bi-telephone-fill"></i>+1012 3456 789</p>
-                    <p class="email-line"><i class="bi bi-envelope-fill"></i>demo@gmail.com</p>
-                    <p class="addres-line"><i class="bi bi-geo-alt-fill"></i>132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+                   
+                    <div class="d-flex g-md-2 g-1 align-items-baseline">
+                      <div class="icon">
+                        <i class="bi bi-telephone-fill "></i>
+                      </div>
+                      <div class="paras addres-line">
+                        +1012 3456 789
+                      </div>
+                    </div>
+                    <div class="d-flex g-md-2 g-1 align-items-baseline">
+                      <div class="icon">
+                        <i class="bi bi-envelope-fill "></i>
+                      </div>
+                      <div class="paras addres-line">
+                        demo@gmail.com
+                      </div>
+                    </div>
+                    <div class="d-flex g-md-2 g-1 align-items-baseline">
+                      <div class="icon">
+                        <i class="bi bi-geo-alt-fill "></i>
+                      </div>
+                      <div class="paras addres-line ps-md-0 ps-2">
+                        132 Dartmouth Street Boston,<br>Massachusetts 02156 United Statess
+                      </div>
+                    </div>
                 </div>
             </div>
        
 
    
-            <div class="col-md-6 mb-5 pt-5">
+            <div class="col-lg-6 mb-lg-5 pt-5">
                 <form>
                     <div class="row mb-3">
                         <div class="col">
@@ -233,7 +256,7 @@
                 </form>
             </div>
  </div>
- <div class="row mt-5 mb-5">
+ <div class="row mt-lg-5 mb-5">
   <div class="col-12 pt-5 mt-5">
     <!-- Embed Google Map using iframe -->
     <iframe class="google-map"
@@ -247,44 +270,46 @@
  </div>
 
     
-     <div class="row">
+     <div class="row pb-5">
       <footer class="footer">
         <div class="container-fluid">
             <div class="footer-content row">
-                <div class="col-md-3 ">
-                    <h5 class="footer-heading">Support</h5>
+                <div class="col-md-2">
+                    <h5 class="footer-heading-smal mb-4">Support</h5>
                        <div class="footer-link">
-                        <a href="#">Contact Us</a><br>
+                        <a href="#"><p class="links-space">Contact Us</p></a>
                         <a href="#">Help & Center</a>
                        </div>
                 </div>
-                <div class="col-md-3">
-                    <h5 class="footer-heading">Company</h5>
+                <div class="col-md-2 pt-md-0 pt-3">
+                    <h5 class="footer-heading-smal mb-4">Company</h5>
                     <div class="footer-link">
-                      <a href="#">Terms of Service</a>
-                      <a href="#">Privacy Policy</a>
-                      <a href="#">About Us</a>
+                      <a href="#" > <p class="links-space">Terms of Service</p></a>
+                      <a href="#"><p class="links-space">Privacy Policy</p></a>
+                      <a href="#"><p class="links-space">About Us</p></a>
                     </div>
                 </div>
-                <div class="col-md-3 pt-5 mt-2">
-                    <h5 class="footer-heading">Contact Us</h5>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                    <p><i class="fas fa-envelope"></i> yourmail@example.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown</p>
-                    <div class="footer-social">
+                <div class="col-md-3 social-links pt-md-0 pt-3">
+                    <h5 class="footer-heading-smal mb-4">Contact Us</h5>
+                    <a href="" class=""><i class="fas fa-phone me-2 mt-1"></i> +123 456 7890</a><br>
+                    <a href=""><i class="fas fa-envelope me-2 mt-3"></i> yourmail@example.com</a><br>
+                    <a href=""><i class="fas fa-map-marker-alt me-2 mt-3"></i> 123 Main St, Anytown</a>
+                    <div class="footer-social mt-4">
                         <a href="#"><img src="./img/photos/linkdin.svg" alt=""></i></a>
                         <a href="#"><img src="./img/photos/faceboob.svg" alt=""></i></a>
                         <a href="#"><img src="./img/photos/twitter.svg" alt=""></i></a>
                         <a href="#"><img src="./img/photos/insta.svg" alt=""></i></a>
                     </div>
                 </div>
-                <div class="col-md-3 pt-5">
-                    <h5 class="footer-heading">Receive updates from our weekly
+                <div class="col-md-4 pt-md-0 pt-3">
+                    <h5 class="footer-heading mb-4">Receive updates from our weekly
                       newsletter.</h5>
                     <p>Be the first to get notified about new foodtech features & updates.</p>
-                    <div class="footer-newsletter d-flex pt-4">
-                        <input type="email" placeholder="Enter your email">
-                        <button>Notify Me</button>
+                    <div class="footer-newsletter d-sm-flex pt-md-4 w-100">
+                        <input type="email" class="w-sm-100" placeholder="Enter your email">
+                        <div class="d-flex justify-content-center mt-3 ">
+                          <button>Notify Me</button>
+                        </div>
                     </div>
                 </div>
             </div>
