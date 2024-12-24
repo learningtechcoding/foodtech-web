@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template"
+    />
+    <meta name="author" content="Bootlab" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
-  <meta name="author" content="Bootlab">
-  <link rel="stylesheet" href="css/FSSAIL.css">
+    <title>Food Tech Website</title>
 
-  <title>Food Tech Website</title>
+    <style>
+      body {
+        opacity: 0;
+      }
 
-  <style>
-    body {
-      opacity: 0;
-    }
+      .mainhaeder {
+        background-color: #000;
+        /* Header default background */
+        transition: all 0.3s ease-in-out;
+      }
 
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-bottom: 20px;
+      }
+    </style>
+    <link href="./css/modern.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/FSSAILicense.css" />
 
-    .mainhaeder {
-      background-color: #000;
-      /* Header default background */
-      transition: all 0.3s ease-in-out;
+    <link rel="stylesheet" href="./css/contactUs.css">
+    <!-- END SETTINGS -->
+  </head>
 
-
-    }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding-bottom: 20px;
-    }
-  </style>
-  <link href="./css/modern.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/custom.css">
-  <!-- END SETTINGS -->
-</head>
-
-<body>
+  <body>
   <!--################> Header start <############  -->
 
   <div class="mainhaeder" id="mainHeader">
@@ -58,25 +62,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link mx-2  active" aria-current="page" href="#">
+                <a class="nav-link mx-2  " aria-current="page" href="./index.html">
                   <div class="dott"></div>
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 active" href="./SubscriptionPage.html">
                   <div class="dott"></div>
                   Subscriptions
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 " href="Reports.html">
                   <div class="dott"></div>
                   Reports
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 " href="#">
+                <a class="nav-link mx-2 " href="ContactUs.html">
                   <div class="dott"></div>
                   Contact Us
                 </a>
@@ -93,205 +97,744 @@
   </div>
   <!--################> Header End   <############-->
 
-  <main>
-    <!-- Home Banner Start  -->
-    <div id="carouselExampleCaptions" class="carousel slide main-home-banner">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+
+    <main>
+      <!-- Home Banner Start  -->
+      <div id="carouselExampleCaptions" class="carousel slide main-home-banner">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/FoodHome/HeroSection.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-8 banner-content">
+                  <h1>SUBSCRIBE FOR</h1>
+                  <h1>EXCLUSIVE UPDATES</h1>
+
+                  <h1 class=""></h1>
+
+                  <p>
+                    Join our community! Subscribe now for exclusive updates,
+                    offers, and insights delivered straight to your inbox.
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4"
+                    style="
+                      background: url('background.jpg') no-repeat center
+                        center/cover;
+                    "
+                  >
+                    <div class="subscribe-container">
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        aria-label="Enter your email"
+                      />
+                      <button type="button">
+                        <span class="d-none d-md-block">Subscribe</span>
+                        <span class="d-block px-0 d-md-none"
+                          ><i class="me-2 fas fa-fw fa-search"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/FoodHome/HeroSection.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-8 banner-content">
+                  <h1>
+                    India's Top Rated Professional Food Regulatory Services
+                  </h1>
+                  <p>
+                    Platform is Connecting you with food technologies expert
+                    having more than 15 years experience.
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4"
+                    style="
+                      background: url('background.jpg') no-repeat center
+                        center/cover;
+                    "
+                  >
+                    <div class="subscribe-container">
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        aria-label="Enter your email"
+                      />
+                      <button type="button">
+                        <span class="d-none d-md-block">Subscribe</span>
+                        <span class="d-block px-0 d-md-none"
+                          ><i class="me-2 fas fa-fw fa-search"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/FoodHome/HeroSection.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-8 banner-content">
+                  <h1>
+                    India's Top Rated Professional Food Regulatory Services
+                  </h1>
+                  <p>
+                    Platform is Connecting you with food technologies expert
+                    having more than 15 years experience.
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4"
+                    style="
+                      background: url('background.jpg') no-repeat center
+                        center/cover;
+                    "
+                  >
+                    <div class="subscribe-container w-100">
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        aria-label="Enter your email"
+                      />
+                      <button type="button">
+                        <span class="d-none d-md-block">Subscribe</span>
+                        <span class="d-block px-0 d-md-none"
+                          ><i class="me-2 fas fa-fw fa-search"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev d-none"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next d-none"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption ">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8 banner-content">
-                <h1>India's Top Rated Professional Food Regulatory Services</h1>
-                <p>Platform is Connecting you with food technologies expert having more than 15 years experience.</p>
+      <!-- Home Banner End  -->
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 pt-5 pt-lg-0">
+              <div class="plan-main FAQS-content text-center">
+                <h1>FSSAI License Application</h1>
+                <p>
+                  Food safety is a crucial aspect of any food business, and in
+                  India, the Food Safety and Standards Authority of India
+                  (FSSAI) ensures that food products meet the necessary safety
+                  and quality standards. Whether you're a small food vendor or a
+                  large-scale manufacturer, obtaining an FSSAI registration or
+                  license is essential for legal compliance and building
+                  consumer trust.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="banner-FSSAI">
+            <img
+              src="./img/FoodHome/FSSAIApplicationbanner.png"
+              class="w-100"
+              alt=""
+            />
+          </div>
+          <!--#################< Accordion Section Start <##############  -->
+          <div class="accordion py-4" id="accordion-example">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1"
+                  aria-expanded="true"
+                >
+                  What is FSSAI Service?
+                </button>
+              </h2>
+              <div
+                id="collapse-1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-2">
+                  FSSAI registration is a mandatory requirement for all
+                  food-related businesses in India. It signifies that a business
+                  complies with the regulations under the Food Safety and
+                  Standards Act, 2006. This registration is essential for food
+                  manufacturers, processors, packers, distributors, and sellers.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2"
+                  aria-expanded="false"
+                >
+                  Types of FSSAI Service
+                </button>
+              </h2>
+              <div
+                id="collapse-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body accordean-contant pt-2">
+                  FSSAI registration is categorized based on the scale of
+                  operations and turnover of the business:
+                  <h4 class="py-2">Basic Registration</h4>
+                  <ul>
+                    <li>
+                      For small-scale businesses with an annual turnover of up
+                      to ₹12 lakh
+                    </li>
+                    <li>
+                      Ideal for petty food manufacturers, small retailers, and
+                      temporary food stalls.
+                    </li>
+                  </ul>
+                  <h4 class="py-2">State License</h4>
+                  <ul>
+                    <li>
+                      For businesses with an annual turnover of ₹12 lakh to ₹20
+                      crore
+                    </li>
+                    <li>
+                      Suitable for medium-sized manufacturers, storage units,
+                      and transporters
+                    </li>
+                  </ul>
+                  <h4 class="py-2">Central License</h4>
+                  <ul>
+                    <li>
+                      For businesses with an annual turnover of over ₹20 crore
+                      or those involved in exporting food products
+                    </li>
+                    <li>
+                      Required for large manufacturers, importers, and chains
+                      operating across multiple states
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3"
+                  aria-expanded="false"
+                >
+                  Key Documents Required for FSSAI Registration
+                </button>
+              </h2>
+              <div
+                id="collapse-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  <h4>
+                    Depending on the type of registration, businesses may need
+                    the following documents:
+                  </h4>
+                  <h4 class="py-2">For Basic Registration</h4>
+                  <ul>
+                    <li>Passport-sized photo of the applicant</li>
+                    <li>Identity proof (e.g., Aadhar Card, PAN Card).</li>
+                    <li>Business details (e.g., address proof).</li>
+                  </ul>
 
+                  <h4 class="py-2">For State and Central Licenses</h4>
+                  <ul>
+                    <li>
+                      Proof of business incorporation (e.g., GST registration).
+                    </li>
+                    <li>List of food products handled.</li>
 
-                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
-                  style="background: url('background.jpg') no-repeat center center/cover;">
-                  <div class="subscribe-container">
-                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
-                    <button type="button">  <span class="d-none d-md-block">Subscribe</span> <span class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
-                  </div>
+                    <li>Layout of the processing unit.</li>
+                    <li>Details of equipment and machinery used.</li>
+                    <li>Water quality test reports.</li>
+                    <li>Import/export documents (if applicable).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-4"
+                  aria-expanded="false"
+                >
+                  Steps to Obtain FSSAI Registration
+                </button>
+              </h2>
+              <div
+                id="collapse-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  <h4>
+                    Steps to Obtain FSSAI RegistrationDetermine the Type of
+                    Registration
+                  </h4>
+                  <ul>
+                    <li>
+                      Assess your business's size and turnover to identify
+                      whether you need Basic, State, or Central registration
+                    </li>
+                  </ul>
+
+                  <h4>Prepare Required Documents</h4>
+                  <ul>
+                    <li>
+                      Gather all necessary documents and ensure they are
+                      complete and up to date
+                    </li>
+                  </ul>
+
+                  <h4>Apply Online</h4>
+                  <ul>
+                    <li>
+                      Visit the official FSSAI website or use a reliable
+                      third-party service to fill out the application form
+                    </li>
+                  </ul>
+
+                  <h4>Submit Fees</h4>
+                  <ul>
+                    <li>
+                      Pay the applicable fees based on the type of registration
+                    </li>
+                  </ul>
+
+                  <h4>Inspection and Approval</h4>
+                  <ul>
+                    <li>
+                      For State and Central licenses, an inspection of the
+                      premises may be conducted before approval
+                    </li>
+                  </ul>
+
+                  <h4>Receive Registration Certificate</h4>
+                  <ul>
+                    <li>
+                      Once approved, the registration/license certificate will
+                      be issued, valid for 1–5 years.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--5th Accordian -->
+            </div>
+            <!--Fith Accordian-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-5"
+                  aria-expanded="false"
+                >
+                  Benefits of FSSAI Registration
+                </button>
+              </h2>
+              <div
+                id="collapse-5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  <h4>Legal Compliance</h4>
+                  <ul>
+                    <li>
+                      Avoid hefty fines and penalties by adhering to food safety
+                      regulations.
+                    </li>
+                  </ul>
+
+                  <h4>Enhanced Consumer Trust</h4>
+                  <ul>
+                    <li>
+                      Displaying the FSSAI logo builds confidence among
+                      consumers about the safety and quality of your products
+                    </li>
+                  </ul>
+
+                  <h4>Market Access</h4>
+                  <ul>
+                    <li>
+                      FSSAI registration is mandatory for exporting food
+                      products and accessing larger markets
+                    </li>
+                  </ul>
+
+                  <h4>Business Growth</h4>
+                  <ul>
+                    <li>
+                      Registration opens up opportunities for partnerships,
+                      collaborations, and expansion
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--6th Accordian -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-6">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-6"
+                  aria-expanded="false"
+                >
+                  Penalties for Non-Compliance
+                </button>
+              </h2>
+              <div
+                id="collapse-6"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  <h4>
+                    Operating a food business without FSSAI registration can
+                    lead to severe penalties, including:
+                  </h4>
+
+                  <ul>
+                    <li>Fines ranging from ₹2 lakh to ₹10 lakh.</li>
+                    <li>Suspension or cancellation of business operations.</li>
+                    <li>
+                      Legal action under the Food Safety and Standards Act.
+                    </li>
+                  </ul>
+
+                  <h4>Renewing Your FSSAI Registration</h4>
+                  <ul>
+                    <li>
+                      FSSAI registration must be renewed before its expiry.
+                      Failing to renew on time may result in penalties and
+                      disruptions to your business. Ensure timely renewal by
+                      monitoring the validity period on your certificate.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--#################< Accordion Section End   <##############-->
+
+          <!--#################< Renewing Your FSSAI Registration text  <##############-->
+          <div class="plan-main FAQS-content text-center">
+            <h1>Renewing Your FSSAI Registration</h1>
+          </div>
+
+          <div class="text_Renewing_Your_FSSAI_Registration">
+            <div class="">
+              <p>
+                FSSAI registration must be renewed before its expiry. Failing to
+                renew on time may result in penalties and disruptions to your
+                business. Ensure timely renewal by monitoring the validity
+                period on your certificate.
+              </p>
+            </div>
+          </div>
+
+          <!--#################< End Renewing Your FSSAI Registration text  <##############-->
+
+          <!--#################< start Frequently Asked Questions  <##############-->
+          <div class="mt-7">
+            <div class="plan-main FAQS-content text-center">
+              <h1>Frequently Asked Questions</h1>
+            </div>
+
+            <div class="textFrequently_Asked_Questions">
+              <div class="">
+                <p>
+                  FoodTech Mate is a web-based platform designed to help food
+                  businesses in India manage FSSAI compliance, licensing, and
+                  regulatory needs
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--#################<  end Frequently Asked Questions text  <##############-->
+
+          <!--#################< Start Second Accordian data   <##############-->
+          <div class="accordion py-4" id="accordion-example">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1"
+                  aria-expanded="true"
+                >
+                  What is FSSAI registration?
+                </button>
+              </h2>
+              <div
+                id="collapse-1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-2">
+                  FSSAI registration is mandatory for all food businesses in
+                  India to ensure food safety and compliance with government
+                  regulations
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2"
+                  aria-expanded="false"
+                >
+                  Who needs FSSAI registration?
+                </button>
+              </h2>
+              <div
+                id="collapse-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body accordean-contant pt-2">
+                  Any food business operator (FBO), including manufacturers,
+                  traders, restaurants, and food delivery services, must obtain
+                  FSSAI registration
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3"
+                  aria-expanded="false"
+                >
+                  What are the different types of FSSAI licenses?
+                </button>
+              </h2>
+              <div
+                id="collapse-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  There are three types of FSSAI licenses: Basic Registration,
+                  State License, and Central License, depending on the size and
+                  turnover of the business
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-4"
+                  aria-expanded="false"
+                >
+                  How long does FSSAI registration take?
+                </button>
+              </h2>
+              <div
+                id="collapse-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  It typically takes 7–10 working days, but it may vary based on
+                  documentation and approvals.
+                </div>
+              </div>
+
+              <!--5th Accordian -->
+            </div>
+            <!--Fith Accordian-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-5"
+                  aria-expanded="false"
+                >
+                  How can I apply for FSSAI registration?
+                </button>
+              </h2>
+              <div
+                id="collapse-5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-example"
+              >
+                <div class="accordion-body pt-0">
+                  You can apply online through the FSSAI FoSCoS portal or via an
+                  FSSAI consultant
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption ">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8 banner-content">
-                <h1>India's Top Rated Professional Food Regulatory Services</h1>
-                <p>Platform is Connecting you with food technologies expert having more than 15 years experience.</p>
 
 
-                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
-                  style="background: url('background.jpg') no-repeat center center/cover;">
-                  <div class="subscribe-container">
-                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
-                    <button type="button">  <span class="d-none d-md-block">Subscribe</span> <span class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/FoodHome/HeroSection.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption ">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8 banner-content">
-                <h1>India's Top Rated Professional Food Regulatory Services</h1>
-                <p>Platform is Connecting you with food technologies expert having more than 15 years experience.</p>
-
-
-                <div class="d-flex justify-content-md-center align-items-center mx-lg-5 mt-4  "
-                  style="background: url('background.jpg') no-repeat center center/cover;">
-                  <div class="subscribe-container w-100">
-                    <input type="email" placeholder="Enter your email" aria-label="Enter your email">
-                    <button type="button">  <span class="d-none d-md-block">Subscribe</span> <span class="d-block px-0 d-md-none"><i class=" me-2 fas fa-fw fa-search"></i></span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- Home Banner End  -->
-
-
-    <div class="container-fluid">
-    <!--###########> Pricing Plan start <#############  -->
-
-<div class="container">
-
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-10">
-     <div class="plan-main text-center">
-      <h1>FSSAI License Application</h1>
-      <p>Food safety is a crucial aspect of any food business, and in India, the Food Safety and Standards Authority of India (FSSAI) ensures that food products meet the necessary safety and quality standards. Whether you're a small food vendor or a large-scale manufacturer, obtaining an FSSAI registration or license is essential for legal compliance and building consumer trust.</p>
-     </div>
-    </div>
-  </div>
-    
-
-  
-
-  <div class="row FSSAI-banner">
-    <div class=" container-fluid ">
-        <h2 class="Fassi-heading">FSSAI License Report</h2>
-
-        <p class="Fassi-pharagraph">Starting an aluminum utensils business in India presents a promising opportunity due to several factors:</p>
-
-       
-           <p class="mb-1"> <strong>High Market Demand:</strong> With urbanization and population growth, aluminum utensils are in high demand. They are lightweight, durable, and affordable, making them a preferred choice for many consumers. </p>
-          <p class="mb-1">  <strong>Cost-Effective Production:</strong> The relatively low cost of aluminum compared to materials like stainless steel helps maintain competitive pricing. </p>
-         <p class="mb-1"> <strong>Cultural Relevance:</strong> Aluminum is a staple in many Indian households, as they are widely used for cooking various dishes.</p>
-            <p class="mb-1"><strong>Versatility:</strong> Available in different shapes and sizes, aluminum utensils cater to diverse cooking needs across India.</p>
-          <p  class="mb-1">  <strong>Sustainability:</strong> Aluminum is recyclable, appealing to environmentally conscious consumers.</p>
-          <p  class="mb-1"> <strong>Government Support:</strong> Initiatives under the "Make in India" campaign can provide benefits to new manufacturers in this sector.</p>
-    
-
-        <p  class="mb-1"><strong>Note:</strong> Upon payment, the complete ebook with detailed insights will be emailed to you in PDF format. Be sure to check your inbox, junk, and spam folders.</p>
-
-        <p class="mb-1"><strong>Disclaimer:</strong> This sample report is designed to provide entrepreneurs with fundamental insights into starting an aluminum utensils business. Each business varies based on multiple factors, and this document should be customized and verified for accuracy before use in formal applications or financing.</p>
 
         
-    </div>
-   
-  </div>
-  <div class="butns mb-4">
-    <span class="price">₹ 599.00 <small class="smll">₹7500</small></span>
-    <button class="buy-butn">Buy Now</button>
-</div>
-
-<div class="row pb-5">
-  <footer class="footer">
-    <div class="container-fluid">
-        <div class="footer-content row">
-            <div class="col-md-2">
-                <h5 class="footer-heading-smal mb-4">Support</h5>
-                   <div class="footer-link">
-                    <a href="#"><p class="links-space">Contact Us</p></a>
-                    <a href="#">Help & Center</a>
-                   </div>
-            </div>
-            <div class="col-md-2 pt-md-0 pt-3">
-                <h5 class="footer-heading-smal mb-4">Company</h5>
-                <div class="footer-link">
-                  <a href="#" > <p class="links-space">Terms of Service</p></a>
-                  <a href="#"><p class="links-space">Privacy Policy</p></a>
-                  <a href="#"><p class="links-space">About Us</p></a>
-                </div>
-            </div>
-            <div class="col-md-3 social-links pt-md-0 pt-3">
-                <h5 class="footer-heading-smal mb-4">Contact Us</h5>
-                <a href="" class=""><i class="fas fa-phone me-2 mt-1"></i> +123 456 7890</a><br>
-                <a href=""><i class="fas fa-envelope me-2 mt-3"></i> yourmail@example.com</a><br>
-                <a href=""><i class="fas fa-map-marker-alt me-2 mt-3"></i> 123 Main St, Anytown</a>
-                <div class="footer-social mt-4">
-                    <a href="#"><img src="./img/photos/linkdin.svg" alt=""></i></a>
-                    <a href="#"><img src="./img/photos/faceboob.svg" alt=""></i></a>
-                    <a href="#"><img src="./img/photos/twitter.svg" alt=""></i></a>
-                    <a href="#"><img src="./img/photos/insta.svg" alt=""></i></a>
-                </div>
-            </div>
-            <div class="col-md-4 pt-md-0 pt-3">
-                <h5 class="footer-heading mb-4">Receive updates from our weekly
-                  newsletter.</h5>
-                <p>Be the first to get notified about new foodtech features & updates.</p>
-                <div class="footer-newsletter d-sm-flex pt-md-4 w-100">
-                    <input type="email" class="w-sm-100" placeholder="Enter your email">
-                    <div class="d-flex justify-content-center mt-3 ">
-                      <button>Notify Me</button>
+        <div class="container">
+            <div class="row pt-5 pb-md-5  ">
+              <footer class="footer">
+                <div class="container-fluid">
+                    <div class="footer-content row">
+                        <div class="col-md-2">
+                            <h5 class="footer-heading-smal mb-4">Support</h5>
+                               <div class="footer-link">
+                                <a href="#"><p class="links-space">Contact Us</p></a>
+                                <a href="#">Help & Center</a>
+                               </div>
+                        </div>
+                        <div class="col-md-2 pt-md-0 pt-3">
+                            <h5 class="footer-heading-smal mb-4">Company</h5>
+                            <div class="footer-link">
+                              <a href="#" > <p class="links-space">Terms of Service</p></a>
+                              <a href="#"><p class="links-space">Privacy Policy</p></a>
+                              <a href="#"><p class="links-space">About Us</p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 social-links pt-md-0 pt-3">
+                            <h5 class="footer-heading-smal mb-4">Contact Us</h5>
+                            <a href="" class=""><i class="fas fa-phone me-2 mt-1"></i> +123 456 7890</a><br>
+                            <a href=""><i class="fas fa-envelope me-2 mt-3"></i> yourmail@example.com</a><br>
+                            <a href=""><i class="fas fa-map-marker-alt me-2 mt-3"></i> 123 Main St, Anytown</a>
+                            <div class="footer-social mt-4">
+                                <a href="#"><img src="./img/photos/linkdin.svg" alt=""></i></a>
+                                <a href="#"><img src="./img/photos/faceboob.svg" alt=""></i></a>
+                                <a href="#"><img src="./img/photos/twitter.svg" alt=""></i></a>
+                                <a href="#"><img src="./img/photos/insta.svg" alt=""></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-md-0 pt-4">
+                            <h5 class="footer-heading mb-4">Receive updates from our weekly
+                              newsletter.</h5>
+                            <p>Be the first to get notified about new foodtech features & updates.</p>
+                            <div class="footer-newsletter d-sm-flex pt-md-4 w-100">
+                                <input type="email" class="w-sm-100" placeholder="Enter your email">
+                                <div class="d-flex justify-content-center mt-3 ">
+                                  <button>Notify Me</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</footer>
- </div>
-</div>
-    <!--###########> Pricing Plan End <#############  -->
-    </div>
- 
-  </main>
-  <script src="js/app.js"></script>
+            </footer>
+             </div>
+      
+      
+          </div>
+  
+      </div>
 
-  <script>
-    // JavaScript to make header sticky on scroll
-    const header = document.getElementById('mainHeader');
+      
+    </main>
+    <script src="js/app.js"></script>
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) { // Adjust threshold as needed
-        header.classList.add('sticky');
-      } else {
-        header.classList.remove('sticky');
-      }
-    });
-  </script>
+    <script>
+      // JavaScript to make header sticky on scroll
+      const header = document.getElementById("mainHeader");
 
-
-</body>
-
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          // Adjust threshold as needed
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      });
+    </script>
+  </body>
 </html>

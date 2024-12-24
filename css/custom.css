@@ -291,6 +291,14 @@ line-height: 30px;
   font-weight: 500;
   line-height: 17px;
 }
+.scard-price1 p a{
+ color: rgba(75, 75, 75, 1);
+ text-decoration: none;
+}
+.scard-price1 p:hover a{
+ color: var(--primary-color);
+ text-decoration: none;
+}
 /*################> Pricing Plan Section End   <################*/
 
 
