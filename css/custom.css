@@ -88,6 +88,9 @@ font-size: 16px;
 line-height: 22px;
 font-weight: 600;
 }
+.banner-content h1{
+  padding-inline: 50px;
+}
 /*###########> Search Input Feild start<#############  */
 .subscribe-container {
     background:transparent;
@@ -226,13 +229,13 @@ font-weight: 600;
 
 .plan-main h1{
 color: var(--sub-heading);
-font-size: 35px;
+font-size: 40px;
 font-weight: 600;
 line-height: 50px;
 }
 .plan-main p{
 color: var(--paragrapgh-color);
-font-size: 18px;
+font-size: 21px;
 font-weight: 600;
 line-height: 30px;
 }
@@ -412,7 +415,7 @@ border: 2px solid transparent;
 
 /*#############> Reports Page Start <############  */
 .tablereports{
-  border: 1px solid var(--primary-color);
+  border: 1px solid rgb(251, 243, 210);
    border-radius: 10px;
 }
 .tablaeheading{
@@ -447,7 +450,7 @@ border: 2px solid transparent;
 }
 
 .table tbody, .table td, .table tfoot, .table th, .table thead, .table tr{
-  border-color: var(--primary-color);
+  border-color: rgb(251, 243, 210);
 }
 .custompagination1 a{
   border-radius: 10px !important;
