@@ -7,7 +7,7 @@
         .form-control {
             border-radius: 8px !important;
             padding: 11px !important;
-            border-bottom: 1px solid var(--primary-color) !important ;
+            /* border-bottom: 1px solid var(--primary-color) !important ; */
             border-top: none !important;
             border-right: none !important;
             border-left: none !important;
@@ -33,6 +33,7 @@
             padding: 45px;
             border-radius: 10px;
             color: #212529;
+            background-image: url(/img/FoodHome/contact-info-bg-img.png);
         }
         @media screen and (max-width:768px){
             .contact-info {
@@ -56,6 +57,7 @@
         .contact-info h3 {
             font-size: 24px;
             font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
         }
         .call-no{
             margin-top: 45px !important;
@@ -68,7 +70,7 @@
         font-weight: 600;
        }
        .addres-line{
-        margin-top: 45px ;
+        margin-top: 40px ;
         font-size: 18px;
         font-weight: 600;
        }
